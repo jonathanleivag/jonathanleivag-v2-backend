@@ -1,5 +1,5 @@
 
-export type Env = 'PORT' | 'MONGODB_URI' | 'DATABASE' | 'URI' | 'NODE_ENV'
+export type Env = 'PORT' | 'MONGODB_URI' | 'DATABASE' | 'URI' | 'NODE_ENV' | 'KEY_RESEND' | 'CONTENT_RESEND' | 'NAME' | 'FROM' | 'TO' | 'SUBJECT'
 
 export interface Hero {
   _id: string
@@ -68,4 +68,10 @@ export interface ContactEmail extends ContactEmailOmit {
 
 export interface ContactSeed {
   email: ContactEmail
+}
+
+export interface EmailBody {
+  name: string
+  email: string
+  content: string
 }
