@@ -3,6 +3,7 @@ import { getEnv } from './utils/env.util'
 import heroRouter from './router/hero.router'
 import { closeDB, connectDB } from './database'
 import cors from 'cors'
+import contactRouter from './router/contact.router'
 
 const PORT = getEnv('PORT')
 
@@ -23,6 +24,7 @@ app.get('/', (_req, res) => {
 })
 
 app.use('/api/hero', heroRouter)
+app.use('/api/contact', contactRouter)
 
 connectDB()
   .then(() => {
