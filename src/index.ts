@@ -1,24 +1,34 @@
 import express from 'express'
 import { getEnv } from './utils/env.util'
 import heroRouter from './router/hero.router'
-import database from './database'
-
-database().catch((err) => console.error(err))
+import { closeDB, connectDB } from './database'
 
 const app = express()
 
 const PORT = getEnv('PORT')
 
 app.get('/', (_req, res) => {
-  res.send('🚀 ~ Jonathanleivag-v2-backend')
-})
-
-app.get('/ping', (_req, res) => {
-  res.send('🚀 ~ pong')
+  res.redirect(getEnv('URI'))
 })
 
 app.use('/api/hero', heroRouter)
 
-app.listen(PORT, () => {
-  console.log('🚀 ~ app.listen ~ PORT:', PORT)
-})
+connectDB()
+  .then(() => {
+    const server = app.listen(PORT, () => {
+      console.log('🚀 ~ app.listen ~ PORT:', PORT)
+    })
+
+    process.on('SIGINT', () => {
+      server.close(() => {
+        closeDB().catch(console.error)
+        process.exit(0)
+      })
+    })
+  })
+  .catch((error) => {
+    if (error instanceof Error) {
+      console.error('🚫 Error connecting to the database:', error.message)
+    }
+    throw error
+  })

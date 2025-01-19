@@ -2,9 +2,16 @@
   "editor.formatOnSave": true,
   "cSpell.language": "en, es",
   "cSpell.words": [
+    "aboutmes",
+    "ABOUTMES",
+    "heros",
+    "HEROS",
     "jonathanleivag",
     "Jonathanleivag",
     "mongodb",
     "MONGODB"
-  ]
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

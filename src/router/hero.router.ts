@@ -1,9 +1,10 @@
 import { Router } from 'express'
+import { getHeros } from '../services/hero.service'
 
 const router = Router()
 
-router.get('/', (_req, res) => {
-  res.send('🚀 ~ jonathanleivag-v2-backend')
+router.get('/', async (_req, res) => {
+  res.send(await getHeros())
 })
 
 export default router
