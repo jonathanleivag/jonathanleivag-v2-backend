@@ -1,6 +1,9 @@
 import express from 'express'
 import { getEnv } from './utils/env.util'
 import heroRouter from './router/hero.router'
+import database from './database'
+
+database().catch((err) => console.error(err))
 
 const app = express()
 
