@@ -1,9 +1,9 @@
 import { getDB } from '../database'
-import { Contact } from '../type'
+import { Contact, Res, ResWhitOutData } from '../type'
 import { CreateEmailOptions, Resend } from 'resend'
 import { getEnv } from '../utils/env.util'
 
-export const getContact = async (): Promise<Contact[]> => {
+export const getContact = async (): Promise<Res> => {
   try {
     console.log('🚀 ~ getContact ~ getContact')
     const db = getDB()
@@ -11,12 +11,28 @@ export const getContact = async (): Promise<Contact[]> => {
     if (contacts == null) {
       throw new Error('Contact not found')
     }
-    return contacts
+    return {
+      data: contacts,
+      error: null,
+      status: 200,
+      statusText: 'OK'
+    }
   } catch (error) {
     if (error instanceof Error) {
-      console.error(error.message)
+      return {
+        data: null,
+        error: error.message,
+        status: 500,
+        statusText: 'Internal Server Error'
+      }
     }
-    throw error
+
+    return {
+      data: null,
+      error: null,
+      status: 500,
+      statusText: 'Internal Server Error'
+    }
   }
 }
 
@@ -163,16 +179,34 @@ const email = async (name: string, content: string, options: CreateEmailOptions)
   }
 }
 
-export const sendEmail = async (name: string, content: string, emailTO: string): Promise<void> => {
+export const sendEmail = async (name: string, content: string, emailTO: string): Promise<ResWhitOutData> => {
   console.log('🚀 ~ sendEmail ~ sendEmail')
   try {
     await email(getEnv('NAME'), content, { from: getEnv('FROM'), to: getEnv('TO'), subject: getEnv('SUBJECT'), html })
 
     await email(name, getEnv('CONTENT_RESEND'), { from: getEnv('FROM'), to: emailTO, subject: getEnv('SUBJECT'), html })
+
+    return {
+      error: null,
+      status: 200,
+      statusText: 'OK',
+      message: 'Se ha enviado el correo con éxito.'
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.error(error.message)
+      return {
+        error: error.message,
+        status: 500,
+        statusText: 'Internal Server Error',
+        message: 'Error al enviar el correo'
+      }
     }
-    throw error
+    return {
+      error: null,
+      status: 500,
+      statusText: 'Internal Server Error',
+      message: 'Error al enviar el correo'
+    }
   }
 }

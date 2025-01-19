@@ -1,6 +1,19 @@
 
 export type Env = 'PORT' | 'MONGODB_URI' | 'DATABASE' | 'URI' | 'NODE_ENV' | 'KEY_RESEND' | 'CONTENT_RESEND' | 'NAME' | 'FROM' | 'TO' | 'SUBJECT'
 
+export interface Res {
+  data: Object | null
+  error: string | null
+  status: number
+  statusText: string
+}
+
+export type ResWhitOutDataOmit = Omit<Res, 'data'>
+
+export interface ResWhitOutData extends ResWhitOutDataOmit {
+  message: string
+}
+
 export interface Hero {
   _id: string
   es: Es
