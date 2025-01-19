@@ -1,0 +1,11 @@
+{
+  "name": "jonathanleivag-v2-backend",
+  "version": "1.0.0",
+  "description": "The backend of JonathanLeivaG-V2 is a robust and secure solution designed to manage personal and professional information, as well as web and mobile development projects that are part of your digital portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonathanleivag",
+  "license": "MIT"
+}
