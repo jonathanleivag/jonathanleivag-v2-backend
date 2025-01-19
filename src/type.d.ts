@@ -1,1 +1,1 @@
-export type Env = 'PORT'
+export type Env = 'PORT' | 'MONGODB_URI' | 'database'
