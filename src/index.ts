@@ -1,11 +1,18 @@
 import express from 'express'
+import { getEnv } from './utils/env.util'
 
 const app = express()
 
+const PORT = getEnv('PORT')
+
 app.get('/', (_req, res) => {
-  res.send('Hello World!')
+  res.send('🚀 ~ Jonathanleivag-v2-backend')
 })
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!')
+app.get('/ping', (_req, res) => {
+  res.send('🚀 ~ pong')
+})
+
+app.listen(PORT, () => {
+  console.log('🚀 ~ app.listen ~ PORT:', PORT)
 })
