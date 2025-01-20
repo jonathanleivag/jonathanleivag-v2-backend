@@ -51,9 +51,11 @@ export interface Contact {
   updatedAt: Date
 }
 
+export type ContactOmit = Omit<Contact, '_id'>
+
 export interface Email {
-  data: Data
-  error: null
+  data: Data | null
+  error: any | null
 }
 
 export interface Data {
