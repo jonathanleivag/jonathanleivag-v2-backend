@@ -1,10 +1,10 @@
 import { Hero, Res } from '../type'
-import { Collection } from '../enum'
+import { COLLECTION } from '../enum'
 import { getDB } from '../database'
 
 const getHeros = async (): Promise<Res> => {
   try {
-    const heros = await getDB().collection<Hero>(Collection.HEROS).find().toArray()
+    const heros = await getDB().collection<Hero>(COLLECTION.HEROS).find().toArray()
 
     if (heros === null) {
       return {

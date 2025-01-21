@@ -1,17 +1,17 @@
 import { getDB } from '../database'
-import { Collection } from '../enum'
+import { COLLECTION } from '../enum'
 import { aboutmes, heros } from '../seed'
 import { ResWhitOutData } from '../type'
 
 const deleteAll = async (): Promise<void> => {
   try {
-    const hero = await getDB().collection(Collection.HEROS).findOne()
+    const hero = await getDB().collection(COLLECTION.HEROS).findOne()
     if (hero !== null) {
-      await getDB().collection(Collection.HEROS).deleteMany()
+      await getDB().collection(COLLECTION.HEROS).deleteMany()
     }
-    const about = await getDB().collection(Collection.ABOUTMES).findOne()
+    const about = await getDB().collection(COLLECTION.ABOUTMES).findOne()
     if (about !== null) {
-      await getDB().collection(Collection.ABOUTMES).deleteMany()
+      await getDB().collection(COLLECTION.ABOUTMES).deleteMany()
     }
   } catch (error) {
     if (error instanceof Error) {
@@ -22,8 +22,8 @@ const deleteAll = async (): Promise<void> => {
 
 const insertAll = async (): Promise<void> => {
   try {
-    await getDB().collection(Collection.HEROS).insertOne(heros)
-    await getDB().collection(Collection.ABOUTMES).insertOne(aboutmes)
+    await getDB().collection(COLLECTION.HEROS).insertOne(heros)
+    await getDB().collection(COLLECTION.ABOUTMES).insertOne(aboutmes)
   } catch (error) {
     if (error instanceof Error) {
       console.error('🚫 Error inserting all data:', error.message)

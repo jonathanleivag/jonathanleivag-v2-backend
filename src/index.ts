@@ -6,13 +6,14 @@ import cors from 'cors'
 import contactRouter from './router/contact.router'
 import aboutMeRouter from './router/aboutMe.router'
 import seedRouter from './router/seed.router'
+import { ENV } from './enum'
 
-const PORT = getEnv('PORT')
+const PORT = getEnv(ENV.PORT)
 
 const app = express()
 
 const corsOptions = {
-  origin: getEnv('URI'),
+  origin: getEnv(ENV.URI),
   optionsSuccessStatus: 200,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With', 'X-CSRF-Token', 'Access-Control-Request-Method', 'Access-Control-Request-Headers', 'Access-Control-Allow-Origin', 'Access-Control-Allow-Credentials', 'Access-Control-Allow-Methods', 'Access-Control-Allow-Headers']
@@ -22,7 +23,7 @@ app.use(cors(corsOptions))
 app.use(express.json({ limit: '1mb' }))
 
 app.get('/', (_req, res) => {
-  res.redirect(getEnv('URI'))
+  res.redirect(getEnv(ENV.URI))
 })
 
 app.use('/api/hero', heroRouter)

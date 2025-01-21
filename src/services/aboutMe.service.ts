@@ -1,11 +1,11 @@
 import { getDB } from '../database'
-import { Collection } from '../enum'
+import { COLLECTION } from '../enum'
 import { AboutMes, Res } from '../type'
 
 export const getAboutMe = async (): Promise<Res> => {
   console.log('🚀 ~ getAboutMe ~ getAboutMe')
   try {
-    const aboutMe = await getDB().collection<AboutMes>(Collection.ABOUTMES).find().toArray()
+    const aboutMe = await getDB().collection<AboutMes>(COLLECTION.ABOUTMES).find().toArray()
 
     if (aboutMe === null) {
       return {
