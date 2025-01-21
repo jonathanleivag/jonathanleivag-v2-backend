@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 export enum COLLECTION {
+=======
+export enum Collection {
+>>>>>>> origin/qa
   ABOUTMES = 'aboutmes',
   CONTACTS = 'contacts',
   HEROS = 'heros',
 }
+<<<<<<< HEAD
 
 export enum ENV {
   PORT = 'PORT',
@@ -17,3 +22,5 @@ export enum ENV {
   TO = 'TO',
   SUBJECT = 'SUBJECT'
 }
+=======
+>>>>>>> origin/qa

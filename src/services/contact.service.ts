@@ -3,12 +3,20 @@ import { Contact, ContactOmit, Data, Res, ResWhitOutData } from '../type'
 import { CreateEmailOptions, Resend } from 'resend'
 import { getEnv } from '../utils/env.util'
 import { html } from '../html'
+<<<<<<< HEAD
 import { COLLECTION, ENV } from '../enum'
+=======
+import { Collection } from '../enum'
+>>>>>>> origin/qa
 
 export const getContact = async (): Promise<Res> => {
   try {
     console.log('🚀 ~ getContact ~ getContact')
+<<<<<<< HEAD
     const contacts = await getDB().collection<Contact>(COLLECTION.CONTACTS).find().toArray()
+=======
+    const contacts = await getDB().collection<Contact>(Collection.CONTACTS).find().toArray()
+>>>>>>> origin/qa
     if (contacts == null) {
       throw new Error('Contact not found')
     }
@@ -47,7 +55,11 @@ const insertEmail = async (resend: Resend, data: { id: string }): Promise<void> 
 
     if (retrieve !== null) {
       const emailData = retrieve as unknown as Data | null
+<<<<<<< HEAD
       await getDB().collection<ContactOmit>(COLLECTION.CONTACTS).insertOne({
+=======
+      await getDB().collection<ContactOmit>(Collection.CONTACTS).insertOne({
+>>>>>>> origin/qa
         email: {
           data: emailData,
           error: errorRetrieve
@@ -66,7 +78,11 @@ const insertEmail = async (resend: Resend, data: { id: string }): Promise<void> 
 const email = async (name: string, content: string, options: CreateEmailOptions, print: boolean = false): Promise<void> => {
   console.log('🚀 ~ email ~ email')
   try {
+<<<<<<< HEAD
     const resend = new Resend(getEnv(ENV.KEY_RESEND))
+=======
+    const resend = new Resend(getEnv('KEY_RESEND'))
+>>>>>>> origin/qa
     if (options.html == null) {
       throw new Error('HTML content is missing')
     }
@@ -96,9 +112,15 @@ const email = async (name: string, content: string, options: CreateEmailOptions,
 export const sendEmail = async (name: string, content: string, emailTO: string): Promise<ResWhitOutData> => {
   console.log('🚀 ~ sendEmail ~ sendEmail')
   try {
+<<<<<<< HEAD
     await email(getEnv(ENV.NAME), content, { from: getEnv(ENV.FROM), to: getEnv(ENV.TO), subject: getEnv(ENV.SUBJECT), html }, true)
 
     await email(name, getEnv(ENV.CONTENT_RESEND), { from: getEnv(ENV.FROM), to: emailTO, subject: getEnv(ENV.SUBJECT), html }, false)
+=======
+    await email(getEnv('NAME'), content, { from: getEnv('FROM'), to: getEnv('TO'), subject: getEnv('SUBJECT'), html }, true)
+
+    await email(name, getEnv('CONTENT_RESEND'), { from: getEnv('FROM'), to: emailTO, subject: getEnv('SUBJECT'), html }, false)
+>>>>>>> origin/qa
 
     return {
       error: null,
