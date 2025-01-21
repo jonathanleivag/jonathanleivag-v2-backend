@@ -3,12 +3,12 @@ import { Contact, ContactOmit, Data, Res, ResWhitOutData } from '../type'
 import { CreateEmailOptions, Resend } from 'resend'
 import { getEnv } from '../utils/env.util'
 import { html } from '../html'
+import { Collection } from '../enum'
 
 export const getContact = async (): Promise<Res> => {
   try {
     console.log('🚀 ~ getContact ~ getContact')
-    const db = getDB()
-    const contacts = await db.collection<Contact>('contacts').find().toArray()
+    const contacts = await getDB().collection<Contact>(Collection.CONTACTS).find().toArray()
     if (contacts == null) {
       throw new Error('Contact not found')
     }
@@ -40,7 +40,6 @@ export const getContact = async (): Promise<Res> => {
 const insertEmail = async (resend: Resend, data: { id: string }): Promise<void> => {
   try {
     console.log('🚀 ~ sendEmail')
-    const db = getDB()
     const { data: retrieve, error: errorRetrieve } = await resend.emails.get(data.id)
     if (errorRetrieve !== null) {
       console.error('🚀 ~ sendEmail ~ errorRetrieve:', errorRetrieve)
@@ -48,7 +47,7 @@ const insertEmail = async (resend: Resend, data: { id: string }): Promise<void> 
 
     if (retrieve !== null) {
       const emailData = retrieve as unknown as Data | null
-      await db.collection<ContactOmit>('contacts').insertOne({
+      await getDB().collection<ContactOmit>(Collection.CONTACTS).insertOne({
         email: {
           data: emailData,
           error: errorRetrieve

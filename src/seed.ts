@@ -1,4 +1,4 @@
-import { ContactSeed, HeroSeed } from './type'
+import { HeroSeed } from './type'
 
 export const heros: HeroSeed = { es: { translation: { title: 'Desarrollador Fullstack', description: '¡Hola! Soy Jonathan, un desarrollador Fullstack que trabaja en el mundo del software. Estoy aquí para ayudarte a crear aplicaciones web y móviles que sean útiles y eficientes para tu negocio o tus clientes. ¿Quieres aprender más sobre mi trabajo y cómo puedo ayudarte?' } }, en: { translation: { title: 'Fullstack Developer', description: "Hello! I'm Jonathan, a Fullstack Developer who works in the world of software. I'm here to help you create useful and efficient web and mobile applications for your business or your clients. Do you want to learn more about my work and how I can help you?" } }, image: 'https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg' }
 

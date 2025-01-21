@@ -90,3 +90,83 @@ export interface EmailBody {
   email: string
   content: string
 }
+
+export interface AboutMes {
+  _id: string
+  es: EsAboutMe
+  en: EnAboutMe
+  image: string
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface EnAboutMe {
+  translation: TranslationAboutMe
+  _id: string
+}
+
+export interface EsAboutMe extends EnAboutMe { }
+
+export interface TranslationAboutMe {
+  title: string
+  description: string
+  education: TranslationEducation
+  skills: Skills
+  interests: Interests
+  knowledge: TranslationKnowledge
+  courses: Course[]
+}
+
+export interface Course {
+  name: string
+  content: string
+  _id: string
+}
+
+export interface TranslationEducation {
+  title: string
+  education: EducationElement[]
+}
+
+export interface EducationElement {
+  name: string
+  degree: string
+  establishment: string
+  dateStart: string
+  dateEnd: string
+  _id: string
+}
+
+export interface Interests {
+  title: string
+  interests: string[]
+}
+
+export interface TranslationKnowledge {
+  title: string
+  knowledge: PurpleKnowledge[]
+}
+
+export interface PurpleKnowledge {
+  title: string
+  knowledge: FluffyKnowledge[]
+  _id: string
+}
+
+export interface FluffyKnowledge {
+  language: string
+  icon: string
+  url: string
+  _id: string
+}
+
+export interface Skills {
+  title: string
+  skills: Skill[]
+}
+
+export interface Skill {
+  title: string
+  content: string
+  _id: string
+}

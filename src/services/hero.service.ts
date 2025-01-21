@@ -4,8 +4,7 @@ import { getDB } from '../database'
 
 const getHeros = async (): Promise<Res> => {
   try {
-    const db = getDB()
-    const heros = await db.collection<Hero>(Collection.HEROS).find().toArray()
+    const heros = await getDB().collection<Hero>(Collection.HEROS).find().toArray()
 
     if (heros === null) {
       return {
