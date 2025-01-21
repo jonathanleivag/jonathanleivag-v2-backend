@@ -1,6 +1,12 @@
+/* -------------------------------------------------------------------------- */
+/*                                 environment                                */
+/* -------------------------------------------------------------------------- */
 
 export type Env = 'PORT' | 'MONGODB_URI' | 'DATABASE' | 'URI' | 'NODE_ENV' | 'KEY_RESEND' | 'CONTENT_RESEND' | 'NAME' | 'FROM' | 'TO' | 'SUBJECT'
 
+/* -------------------------------------------------------------------------- */
+/*                                  Response                                  */
+/* -------------------------------------------------------------------------- */
 export interface Res {
   data: Object | null
   error: string | null
@@ -8,12 +14,24 @@ export interface Res {
   statusText: string
 }
 
-export type ResWhitOutDataOmit = Omit<Res, 'data'>
+type ResWhitOutDataOmit = Omit<Res, 'data'>
 
 export interface ResWhitOutData extends ResWhitOutDataOmit {
   message: string
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                request Email                               */
+/* -------------------------------------------------------------------------- */
+export interface EmailBody {
+  name: string
+  email: string
+  content: string
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
 export interface Hero {
   _id: string
   es: Es
@@ -35,14 +53,9 @@ export interface Translation {
   description: string
 }
 
-type HeroSeedPick = Pick<Hero, 'image'>
-type EnOmit = Omit<En, '_id'>
-type EsSeed = EnOmit
-
-export interface HeroSeed extends HeroSeedPick {
-  es: EsSeed
-  en: EnOmit
-}
+/* -------------------------------------------------------------------------- */
+/*                                   contact                                  */
+/* -------------------------------------------------------------------------- */
 
 export interface Contact {
   _id: string
@@ -85,11 +98,9 @@ export interface ContactSeed {
   email: ContactEmail
 }
 
-export interface EmailBody {
-  name: string
-  email: string
-  content: string
-}
+/* -------------------------------------------------------------------------- */
+/*                                  About Me                                  */
+/* -------------------------------------------------------------------------- */
 
 export interface AboutMes {
   _id: string
@@ -99,6 +110,21 @@ export interface AboutMes {
   createdAt: Date
   updatedAt: Date
 }
+
+export type AboutMesPick = Pick<AboutMes, 'image'>
+
+export interface AboutMesSeed extends AboutMesPick {
+  es: EsAboutMeSeed
+  en: AboutMesSeed
+}
+
+export type EnAboutMeOmit = Omit<EnAboutMe, '_id'>
+export interface EsAboutMeSeed extends EnAboutMeOmit { }
+export type CourseOmit = Omit<Course, '_id'>
+export type EducationElementOmit = Omit<EducationElement, '_id'>
+export type PurpleKnowledgeOmit = Omit<PurpleKnowledge, '_id'>
+export type FluffyKnowledgeOmit = Omit<FluffyKnowledge, '_id'>
+export type SkillOmit = Omit<Skill, '_id'>
 
 export interface EnAboutMe {
   translation: TranslationAboutMe

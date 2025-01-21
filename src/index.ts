@@ -5,6 +5,7 @@ import { closeDB, connectDB } from './database'
 import cors from 'cors'
 import contactRouter from './router/contact.router'
 import aboutMeRouter from './router/aboutMe.router'
+import seedRouter from './router/seed.router'
 
 const PORT = getEnv('PORT')
 
@@ -27,6 +28,7 @@ app.get('/', (_req, res) => {
 app.use('/api/hero', heroRouter)
 app.use('/api/contact', contactRouter)
 app.use('/api/about', aboutMeRouter)
+app.use('/api/seed', seedRouter)
 
 connectDB()
   .then(() => {
