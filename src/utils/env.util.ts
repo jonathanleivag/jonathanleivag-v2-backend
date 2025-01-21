@@ -1,7 +1,7 @@
 import 'dotenv/config'
-import { Env } from '../type'
+import { ENV } from '../enum'
 
-export const getEnv = (key: Env): string => {
+export const getEnv = (key: ENV): string => {
   const value = process.env[key]
   if (value == null || value === '') {
     throw new Error(`Missing env variable: ${key}`)
