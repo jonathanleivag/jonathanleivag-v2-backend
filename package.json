@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
     "start": "node build/index.js",
+    "start": "node build/index.js",
     "build": "tsc",
     "lint": "ts-standard",
     "lint:fix": "ts-standard --fix"
@@ -29,7 +30,7 @@
   },
   "eslintConfig": {
     "ignorePatterns": [
-      "build/*"
+      "build/*""build/*"
     ],
     "parserOptions": {
       "project": "./tsconfig.json"
