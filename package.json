@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
-    "start": "node public/index.js",
+    "start": "node build/index.js",
     "build": "tsc",
     "lint": "ts-standard",
-    "lint:fix": "ts-standard --fix"
+    "lint:fix": "ts-standard --fix""lint:fix": "ts-standard --fix"
   },
   "author": "Jonathanleivag",
   "license": "MIT",
@@ -29,7 +29,7 @@
   },
   "eslintConfig": {
     "ignorePatterns": [
-      "public/*"
+      "build/*"
     ],
     "parserOptions": {
       "project": "./tsconfig.json"
