@@ -1,10 +1,11 @@
 import { Router, Request, Response } from 'express'
 import { getContact, sendEmail } from '../services/contact.service'
-import { EmailBody, Res, ResWhitOutData } from '../type'
+import { Contact, EmailBody, Res, ResWhitOutData } from '../type'
+import { WithId } from 'mongodb'
 
 const router = Router()
 
-router.get('/', async (_req, res: Response<Res>) => {
+router.get('/', async (_req, res: Response<Res<Array<WithId<Contact>>>>) => {
   res.json(await getContact())
 })
 

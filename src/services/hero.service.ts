@@ -1,8 +1,9 @@
 import { Hero, Res } from '../type'
 import { COLLECTION } from '../enum'
 import { getDB } from '../database'
+import { WithId } from 'mongodb'
 
-const getHeros = async (): Promise<Res> => {
+const getHeros = async (): Promise<Res<Array<WithId<Hero>>>> => {
   try {
     const heros = await getDB().collection<Hero>(COLLECTION.HEROS).find().toArray()
 

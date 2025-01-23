@@ -1,8 +1,9 @@
+import { WithId } from 'mongodb'
 import { getDB } from '../database'
 import { COLLECTION } from '../enum'
 import { AboutMes, Res } from '../type'
 
-export const getAboutMe = async (): Promise<Res> => {
+export const getAboutMe = async (): Promise<Res<Array<WithId<AboutMes>>>> => {
   console.log('🚀 ~ getAboutMe ~ getAboutMe')
   try {
     const aboutMe = await getDB().collection<AboutMes>(COLLECTION.ABOUTMES).find().toArray()

@@ -1,14 +1,23 @@
-import { Octokit } from '@octokit/rest'
+import { Octokit, RestEndpointMethodTypes } from '@octokit/rest'
 import { ENV } from '../enum'
-import { PinnedRepo, Res } from '../type'
+import { IProject, PinnedRepo, Res } from '../type'
 import { getEnv } from '../utils/env.util'
 
-export const getProjects = async (): Promise<Res> => {
+export const getProjects = async (): Promise<Res<IProject>> => {
   console.log('🚀 ~ getProjects ~ getProjects')
   try {
     const pinned = (await fetchPinnedRepos()).data
     const readme = (await getReadme()).data
     const info = (await getInfo()).data
+
+    if (pinned === null || readme === null || info === null) {
+      return {
+        status: 404,
+        statusText: 'Not Found',
+        error: 'No se encontraron los datos',
+        data: null
+      }
+    }
 
     return {
       status: 200,
@@ -34,7 +43,7 @@ export const getProjects = async (): Promise<Res> => {
   }
 }
 
-export const fetchPinnedRepos = async (): Promise<Res> => {
+export const fetchPinnedRepos = async (): Promise<Res<PinnedRepo[]>> => {
   console.log('🚀 ~ fetchPinnedRepos ~ fetchPinnedRepos')
   const query = `
     query($username: String!) {
@@ -112,7 +121,7 @@ export const fetchPinnedRepos = async (): Promise<Res> => {
   }
 }
 
-export const getReadme = async (): Promise<Res> => {
+export const getReadme = async (): Promise<Res<string>> => {
   console.log('🚀 ~ getReadme ~ getReadme')
   const octokit = new Octokit({
     auth: getEnv(ENV.GITHUB_TOKEN)
@@ -151,7 +160,7 @@ export const getReadme = async (): Promise<Res> => {
   }
 }
 
-export const getInfo = async (): Promise<Res> => {
+export const getInfo = async (): Promise<Res<RestEndpointMethodTypes['users']['getAuthenticated']['response']['data']>> => {
   console.log('🚀 ~ getInfo ~ getInfo')
   const octokit = new Octokit({
     auth: getEnv(ENV.GITHUB_TOKEN)
