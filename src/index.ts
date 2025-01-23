@@ -7,6 +7,7 @@ import contactRouter from './router/contact.router'
 import aboutMeRouter from './router/aboutMe.router'
 import seedRouter from './router/seed.router'
 import { ENV } from './enum'
+import projectRouter from './router/project.router'
 
 const PORT = getEnv(ENV.PORT)
 
@@ -30,6 +31,7 @@ app.use('/api/hero', heroRouter)
 app.use('/api/contact', contactRouter)
 app.use('/api/about', aboutMeRouter)
 app.use('/api/seed', seedRouter)
+app.use('/api/project', projectRouter)
 
 connectDB()
   .then(() => {

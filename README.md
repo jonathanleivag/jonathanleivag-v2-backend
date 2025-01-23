@@ -36,6 +36,8 @@ Follow the steps below to run the backend locally:
    FROM= # From email
    TO= # To email
    SUBJECT= # Subject of the email
+   GITHUB_USERNAME= # GitHub username
+   GITHUB_TOKEN= # GitHub token
    ```
 
 4. **Start the development server:**
@@ -68,6 +70,14 @@ The backend provides the following main routes:
 |--------|------------------------|---------------------------------------------------|-----------------|
 | GET    | /api/contact/          | Displays sent emails                              | No              |
 | POST   | /api/contact/send/email | Sends an email to the user and a copy to me       | No              |
+
+### Projects
+| Method | Route             | Description                        | Authentication |
+|--------|-------------------|------------------------------------|-----------------|
+| GET    | /api/project/       | You get the projects, user information and Pinned from github | No              |
+| GET    | /api/project/pinned       | You get pinned from github  | No              |
+| GET    | /api/project/readme     | Get main project readme from github | No              |
+| GET    | /api/project/info       | Get main user information from github | No              |
 
 ## Author
 **Jonathan Leiva G**

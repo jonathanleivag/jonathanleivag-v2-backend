@@ -190,3 +190,14 @@ export interface Skill {
   content: string
   _id: string
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                   Project                                  */
+/* -------------------------------------------------------------------------- */
+export interface PinnedRepo {
+  name: string
+  description: string | null
+  url: string
+  stargazerCount: number
+  forkCount: number
+}
