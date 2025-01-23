@@ -35,7 +35,7 @@ export const insert = async (): Promise<ResWhitOutData> => {
   try {
     await deleteAll()
     await insertAll()
-    return { message: '🚀 ~ jonathanleivag-v2-backend', status: 200, statusText: 'OK', error: null }
+    return { message: 'Data inserted successfully', status: 200, statusText: 'OK', error: null }
   } catch (error) {
     if (error instanceof Error) {
       console.error('🚫 Error inserting data:', error.message)
