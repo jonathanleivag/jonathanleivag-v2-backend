@@ -8,8 +8,7 @@
     "start": "node api/index.js",
     "build": "tsc",
     "lint": "ts-standard",
-    "lint:fix": "ts-standard --fix",
-    "vercel": "npm run build && npx vercel"
+    "lint:fix": "ts-standard --fix"
   },
   "author": "Jonathanleivag",
   "license": "MIT",
@@ -30,7 +29,7 @@
   },
   "eslintConfig": {
     "ignorePatterns": [
-      "api/*"
+      "public/*"
     ],
     "parserOptions": {
       "project": "./tsconfig.json"
