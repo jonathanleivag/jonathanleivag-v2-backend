@@ -4,8 +4,9 @@ import { CreateEmailOptions, Resend } from 'resend'
 import { getEnv } from '../utils/env.util'
 import { html } from '../html'
 import { COLLECTION, ENV } from '../enum'
+import { WithId } from 'mongodb'
 
-export const getContact = async (): Promise<Res> => {
+export const getContact = async (): Promise<Res<Array<WithId<Contact>>>> => {
   try {
     console.log('🚀 ~ getContact ~ getContact')
     const contacts = await getDB().collection<Contact>(COLLECTION.CONTACTS).find().toArray()
