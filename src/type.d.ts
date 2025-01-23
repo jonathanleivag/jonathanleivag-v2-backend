@@ -1,8 +1,8 @@
 /* -------------------------------------------------------------------------- */
 /*                                  Response                                  */
 /* -------------------------------------------------------------------------- */
-export interface Res {
-  data: Object | null
+export interface Res<T> {
+  data: T | null
   error: string | null
   status: number
   statusText: string
@@ -200,4 +200,10 @@ export interface PinnedRepo {
   url: string
   stargazerCount: number
   forkCount: number
+}
+
+export interface IProject {
+  pinned: PinnedRepo[]
+  readme: string
+  info: RestEndpointMethodTypes['users']['getAuthenticated']['response']['data']
 }
