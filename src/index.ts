@@ -35,6 +35,10 @@ app.use('/api/about', aboutMeRouter)
 app.use('/api/seed', seedRouter)
 app.use('/api/project', projectRouter)
 
+app.use((_req, res) => {
+  res.redirect(getEnv(ENV.URI))
+})
+
 connectDB()
   .then(() => {
     const server = app.listen(PORT, () => {
