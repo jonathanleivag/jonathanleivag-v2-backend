@@ -8,6 +8,7 @@ import aboutMeRouter from './router/aboutMe.router'
 import seedRouter from './router/seed.router'
 import { ENV } from './enum'
 import projectRouter from './router/project.router'
+import helmet from 'helmet'
 
 const PORT = getEnv(ENV.PORT)
 
@@ -22,6 +23,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 app.use(express.json({ limit: '1mb' }))
+app.use(helmet())
 
 app.get('/', (_req, res) => {
   res.redirect(getEnv(ENV.URI))
