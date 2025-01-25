@@ -1,6 +1,6 @@
 import { Router, Response } from 'express'
-import { AboutMes, Res } from '../type'
-import { getAboutMe } from '../services/aboutMe.service'
+import { AboutMes, Res } from '../type.js'
+import { getAboutMe } from '../services/aboutMe.service.js'
 import { WithId } from 'mongodb'
 
 const router = Router()

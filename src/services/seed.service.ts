@@ -1,7 +1,7 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { aboutmes, heros } from '../seed'
-import { ResWhitOutData } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { aboutmes, heros } from '../seed.js'
+import { ResWhitOutData } from '../type.js'
 
 const deleteAll = async (): Promise<void> => {
   try {

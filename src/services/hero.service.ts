@@ -1,6 +1,6 @@
-import { Hero, Res } from '../type'
-import { COLLECTION } from '../enum'
-import { getDB } from '../database'
+import { Hero, Res } from '../type.js'
+import { COLLECTION } from '../enum.js'
+import { getDB } from '../database.js'
 import { WithId } from 'mongodb'
 
 const getHeros = async (): Promise<Res<Array<WithId<Hero>>>> => {

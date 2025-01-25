@@ -1,7 +1,7 @@
 import { WithId } from 'mongodb'
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { AboutMes, Res } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { AboutMes, Res } from '../type.js'
 
 export const getAboutMe = async (): Promise<Res<Array<WithId<AboutMes>>>> => {
   console.log('🚀 ~ getAboutMe ~ getAboutMe')

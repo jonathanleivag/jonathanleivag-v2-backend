@@ -1,16 +1,14 @@
-import express from 'express'
-import { getEnv } from './utils/env.util'
-import heroRouter from './router/hero.router'
-import { closeDB, connectDB } from './database'
+import express, { Request, Response } from 'express'
+import { getEnv } from './utils/env.util.js'
+import heroRouter from './router/hero.router.js'
+import { connectDB } from './database.js'
 import cors from 'cors'
-import contactRouter from './router/contact.router'
-import aboutMeRouter from './router/aboutMe.router'
-import seedRouter from './router/seed.router'
-import { ENV } from './enum'
-import projectRouter from './router/project.router'
+import contactRouter from './router/contact.router.js'
+import aboutMeRouter from './router/aboutMe.router.js'
+import seedRouter from './router/seed.router.js'
+import { ENV } from './enum.js'
+import projectRouter from './router/project.router.js'
 import helmet from 'helmet'
-
-const PORT = getEnv(ENV.PORT)
 
 const app = express()
 
@@ -39,22 +37,21 @@ app.use((_req, res) => {
   res.redirect(getEnv(ENV.URI))
 })
 
-connectDB()
-  .then(() => {
-    const server = app.listen(PORT, () => {
-      console.log('🚀 ~ app.listen ~ PORT:', PORT)
-    })
+let isConnected = false
 
-    process.on('SIGINT', () => {
-      server.close(() => {
-        closeDB().catch(console.error)
-        process.exit(0)
-      })
-    })
-  })
-  .catch((error) => {
+const handler = async (req: Request, res: Response): Promise<void> => {
+  try {
+    if (!isConnected) {
+      await connectDB()
+      isConnected = true
+    }
+    app(req, res)
+  } catch (error) {
     if (error instanceof Error) {
-      console.error('🚫 Error connecting to the database:', error.message)
+      console.error(error.message)
     }
     throw error
-  })
+  }
+}
+
+export default handler
