@@ -1,6 +1,7 @@
 {
   "name": "jonathanleivag-v2-backend",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "description": "The backend of JonathanLeivaG-V2 is a robust and secure solution designed to manage personal and professional information, as well as web and mobile development projects that are part of your digital portfolio.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +9,8 @@
     "start": "node build/index.js",
     "build": "tsc",
     "lint": "ts-standard",
-    "lint:fix": "ts-standard --fix"
+    "lint:fix": "ts-standard --fix",
+    "vercel-build": "echo \"No build needed\""
   },
   "author": "Jonathanleivag",
   "license": "MIT",

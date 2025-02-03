@@ -1,6 +1,6 @@
 import { Response, Router } from 'express'
-import { fetchPinnedRepos, getInfo, getProjects, getReadme } from '../services/project.service'
-import { IProject, PinnedRepo, Res } from '../type'
+import { fetchPinnedRepos, getInfo, getProjects, getReadme } from '../services/project.service.js'
+import { IProject, PinnedRepo, Res } from '../type.js'
 import { RestEndpointMethodTypes } from '@octokit/rest'
 
 const router = Router()

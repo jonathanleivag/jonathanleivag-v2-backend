@@ -1,6 +1,6 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { Header, Lang, Res } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { Header, Lang, Res } from '../type.js'
 
 export const getHeader = async (lang: Lang): Promise<Res<Header>> => {
   try {
