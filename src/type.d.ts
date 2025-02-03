@@ -15,6 +15,12 @@ export interface ResWhitOutData extends ResWhitOutDataOmit {
   message: string
 }
 
+export type Lang = 'es' | 'en'
+
+export interface LangBody {
+  lang: Lang
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                request Email                               */
 /* -------------------------------------------------------------------------- */
@@ -173,18 +179,20 @@ export interface IProject {
 /* -------------------------------------------------------------------------- */
 /*                                   header                                   */
 /* -------------------------------------------------------------------------- */
-export type Lang = 'es' | 'en'
-
-export interface LangBody {
-  lang: Lang
-}
 
 export interface Header {
   _id: ObjectId
-  len: Lang
+  lan: Lang
   title: string
   name: string
   subTitle: string
   buttonText: string
   imageUrl: string
+}
+
+export interface Navbar {
+  _id: ObjectId
+  lan: Lang
+  nav: string[]
+  image: string
 }

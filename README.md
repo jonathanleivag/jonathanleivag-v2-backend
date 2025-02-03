@@ -56,23 +56,33 @@ Follow the steps below to run the backend locally:
 The backend provides the following main routes:
 
 ### Hero
-| Method | Route             | Description                        | Authentication |
+| Method | Route             | Description                        | Body |
 |--------|-------------------|------------------------------------|-----------------|
-| GET    | /api/hero/        | Retrieves the application's hero   | No              |
+| GET    | /api/hero/        | Retrieves the application's hero   |  "lang":"en"            |
 
 ### About Me
-| Method | Route             | Description                        | Authentication |
+| Method | Route             | Description                        | body |
 |--------|-------------------|------------------------------------|-----------------|
-| GET    | /api/about/       | Retrieves the application's about me | No              |
+| GET    | /api/about/       | Retrieves the application's about me |  "lang":"en"           |
+
+### Header
+| Method | Route             | Description                        | body |
+|--------|-------------------|------------------------------------|-----------------|
+| GET    | /api/header/       | Retrieves the application's Header |  "lang":"en"           |
+
+### Navbar
+| Method | Route             | Description                        | body |
+|--------|-------------------|------------------------------------|-----------------|
+| GET    | /api/navbar/       | Retrieves the application's Navbar |  "lang":"en"           |
 
 ### Contact
-| Method | Route                  | Description                                       | Authentication |
+| Method | Route                  | Description                                       | body |
 |--------|------------------------|---------------------------------------------------|-----------------|
 | GET    | /api/contact/          | Displays sent emails                              | No              |
 | POST   | /api/contact/send/email | Sends an email to the user and a copy to me       | No              |
 
 ### Projects
-| Method | Route             | Description                        | Authentication |
+| Method | Route             | Description                        | body |
 |--------|-------------------|------------------------------------|-----------------|
 | GET    | /api/project/       | You get the projects, user information and Pinned from github | No              |
 | GET    | /api/project/pinned       | You get pinned from github  | No              |
