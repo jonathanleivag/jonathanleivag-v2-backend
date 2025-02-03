@@ -5,8 +5,8 @@ import { Header, LangBody, Res } from '../type'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, LangBody>, res: Response<Res<Header>>) => {
-  res.json(await getHeader(req.body.lang))
+router.get('/', async (req: Request<{}, {}, {}, LangBody>, res: Response<Res<Header>>) => {
+  res.json(await getHeader(req.query.lang))
 })
 
 export default router

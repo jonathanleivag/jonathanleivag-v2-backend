@@ -4,8 +4,8 @@ import { getNavar } from '../services/navabar.service'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, LangBody>, res: Response<Res<Navbar>>) => {
-  res.json(await getNavar(req.body.lang))
+router.get('/', async (req: Request<{}, {}, {}, LangBody>, res: Response<Res<Navbar>>) => {
+  res.json(await getNavar(req.query.lang))
 })
 
 export default router
