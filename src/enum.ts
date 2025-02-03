@@ -2,6 +2,7 @@ export enum COLLECTION {
   ABOUTMES = 'aboutmes',
   CONTACTS = 'contacts',
   HEROS = 'heros',
+  HEADERS = 'headers',
 }
 
 export enum ENV {
