@@ -3,6 +3,7 @@ export enum COLLECTION {
   CONTACTS = 'contacts',
   HEROS = 'heros',
   HEADERS = 'headers',
+  NAVBAR = 'navbar'
 }
 
 export enum ENV {

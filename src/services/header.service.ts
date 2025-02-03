@@ -27,7 +27,7 @@ export const getHeader = async (lang: Lang): Promise<Res<Header>> => {
     if (headerDoc !== null) {
       const header: Header = {
         _id: headerDoc._id,
-        len: headerDoc.len,
+        lan: headerDoc.len,
         title: headerDoc.title,
         name: headerDoc.name,
         subTitle: headerDoc.subTitle,
