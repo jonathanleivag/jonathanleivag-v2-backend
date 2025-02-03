@@ -1,6 +1,6 @@
 import { Router, Response, Request } from 'express'
-import { getHeros } from '../services/hero.service'
-import { Hero, LangBody, Res } from '../type'
+import { getHeros } from '../services/hero.service.js'
+import { Hero, LangBody, Res } from '../type.js'
 
 const router = Router()
 

@@ -1,9 +1,9 @@
-import { getDB } from '../database'
-import { Contact, ContactOmit, Data, Res, ResWhitOutData } from '../type'
+import { getDB } from '../database.js'
+import { Contact, ContactOmit, Data, Res, ResWhitOutData } from '../type.js'
 import { CreateEmailOptions, Resend } from 'resend'
-import { getEnv } from '../utils/env.util'
-import { html } from '../html'
-import { COLLECTION, ENV } from '../enum'
+import { getEnv } from '../utils/env.util.js'
+import { html } from '../html.js'
+import { COLLECTION, ENV } from '../enum.js'
 import { WithId } from 'mongodb'
 
 export const getContact = async (): Promise<Res<Array<WithId<Contact>>>> => {
