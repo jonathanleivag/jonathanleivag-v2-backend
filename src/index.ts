@@ -1,14 +1,17 @@
 import express from 'express'
-import { getEnv } from './utils/env.util'
-import heroRouter from './router/hero.router'
-import { closeDB, connectDB } from './database'
 import cors from 'cors'
+import helmet from 'helmet'
+
+import { getEnv } from './utils/env.util'
+import { closeDB, connectDB } from './database'
+import { ENV } from './enum'
+
+import heroRouter from './router/hero.router'
 import contactRouter from './router/contact.router'
 import aboutMeRouter from './router/aboutMe.router'
 import seedRouter from './router/seed.router'
-import { ENV } from './enum'
 import projectRouter from './router/project.router'
-import helmet from 'helmet'
+import headerRouter from './router/header.router'
 
 const PORT = getEnv(ENV.PORT)
 
@@ -34,6 +37,7 @@ app.use('/api/contact', contactRouter)
 app.use('/api/about', aboutMeRouter)
 app.use('/api/seed', seedRouter)
 app.use('/api/project', projectRouter)
+app.use('/api/header', headerRouter)
 
 app.use((_req, res) => {
   res.redirect(getEnv(ENV.URI))

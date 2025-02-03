@@ -1,3 +1,4 @@
+import { ObjectId } from 'mongodb'
 /* -------------------------------------------------------------------------- */
 /*                                  Response                                  */
 /* -------------------------------------------------------------------------- */
@@ -28,23 +29,11 @@ export interface EmailBody {
 /* -------------------------------------------------------------------------- */
 export interface Hero {
   _id: string
-  es: Es
-  en: En
+  title: string
+  description: string
   image: string
   createdAt: Date
   updatedAt: Date
-}
-
-export interface En {
-  translation: Translation
-  _id: string
-}
-
-export interface ES extends En { }
-
-export interface Translation {
-  title: string
-  description: string
 }
 
 /* -------------------------------------------------------------------------- */
@@ -98,36 +87,6 @@ export interface ContactSeed {
 
 export interface AboutMes {
   _id: string
-  es: EsAboutMe
-  en: EnAboutMe
-  image: string
-  createdAt: Date
-  updatedAt: Date
-}
-
-export type AboutMesPick = Pick<AboutMes, 'image'>
-
-export interface AboutMesSeed extends AboutMesPick {
-  es: EsAboutMeSeed
-  en: AboutMesSeed
-}
-
-export type EnAboutMeOmit = Omit<EnAboutMe, '_id'>
-export interface EsAboutMeSeed extends EnAboutMeOmit { }
-export type CourseOmit = Omit<Course, '_id'>
-export type EducationElementOmit = Omit<EducationElement, '_id'>
-export type PurpleKnowledgeOmit = Omit<PurpleKnowledge, '_id'>
-export type FluffyKnowledgeOmit = Omit<FluffyKnowledge, '_id'>
-export type SkillOmit = Omit<Skill, '_id'>
-
-export interface EnAboutMe {
-  translation: TranslationAboutMe
-  _id: string
-}
-
-export interface EsAboutMe extends EnAboutMe { }
-
-export interface TranslationAboutMe {
   title: string
   description: string
   education: TranslationEducation
@@ -135,6 +94,9 @@ export interface TranslationAboutMe {
   interests: Interests
   knowledge: TranslationKnowledge
   courses: Course[]
+  image: string
+  createdAt: Date
+  updatedAt: Date
 }
 
 export interface Course {
@@ -206,4 +168,23 @@ export interface IProject {
   pinned: PinnedRepo[]
   readme: string
   info: RestEndpointMethodTypes['users']['getAuthenticated']['response']['data']
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   header                                   */
+/* -------------------------------------------------------------------------- */
+export type Lang = 'es' | 'en'
+
+export interface LangBody {
+  lang: Lang
+}
+
+export interface Header {
+  _id: ObjectId
+  len: Lang
+  title: string
+  name: string
+  subTitle: string
+  buttonText: string
+  imageUrl: string
 }

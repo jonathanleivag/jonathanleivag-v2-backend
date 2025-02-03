@@ -1,13 +1,31 @@
-import { Hero, Res } from '../type'
+import { Hero, Lang, Res } from '../type'
 import { COLLECTION } from '../enum'
 import { getDB } from '../database'
-import { WithId } from 'mongodb'
 
-const getHeros = async (): Promise<Res<Array<WithId<Hero>>>> => {
+const getHeros = async (lang: Lang): Promise<Res<Hero>> => {
   try {
-    const heros = await getDB().collection<Hero>(COLLECTION.HEROS).find().toArray()
+    console.log('🚀 ~ getHeros ~ getHeros')
+    if (lang === null) {
+      return {
+        data: null,
+        error: 'No se especificó el idioma',
+        status: 400,
+        statusText: 'Bad Request'
+      }
+    }
 
-    if (heros === null) {
+    if (lang !== 'es' && lang !== 'en') {
+      return {
+        data: null,
+        error: 'El idioma no es válido (es o en)',
+        status: 400,
+        statusText: 'Bad Request'
+      }
+    }
+
+    const heroDoc = await getDB().collection<Hero>(COLLECTION.HEROS).findOne({ lan: lang })
+
+    if (heroDoc === null) {
       return {
         data: null,
         error: 'No se encontraron heroes',
@@ -15,8 +33,16 @@ const getHeros = async (): Promise<Res<Array<WithId<Hero>>>> => {
         statusText: 'Not Found'
       }
     }
+    const hero: Hero = {
+      _id: heroDoc._id,
+      title: heroDoc.title,
+      description: heroDoc.description,
+      image: heroDoc.image,
+      createdAt: heroDoc.createdAt,
+      updatedAt: heroDoc.updatedAt
+    }
     return {
-      data: heros,
+      data: hero,
       error: null,
       status: 200,
       statusText: 'OK'
