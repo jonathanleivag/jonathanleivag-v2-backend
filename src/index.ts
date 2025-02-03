@@ -12,6 +12,7 @@ import aboutMeRouter from './router/aboutMe.router'
 import seedRouter from './router/seed.router'
 import projectRouter from './router/project.router'
 import headerRouter from './router/header.router'
+import navbarRouter from './router/navbar.router'
 
 const PORT = getEnv(ENV.PORT)
 
@@ -38,6 +39,7 @@ app.use('/api/about', aboutMeRouter)
 app.use('/api/seed', seedRouter)
 app.use('/api/project', projectRouter)
 app.use('/api/header', headerRouter)
+app.use('/api/navbar', navbarRouter)
 
 app.use((_req, res) => {
   res.redirect(getEnv(ENV.URI))
