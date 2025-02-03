@@ -1,12 +1,11 @@
-import { Router, Response } from 'express'
+import { Router, Response, Request } from 'express'
 import { getHeros } from '../services/hero.service'
-import { Hero, Res } from '../type'
-import { WithId } from 'mongodb'
+import { Hero, LangBody, Res } from '../type'
 
 const router = Router()
 
-router.get('/', async (_req, res: Response<Res<Array<WithId<Hero>>>>) => {
-  res.json(await getHeros())
+router.get('/', async (req: Request<{}, {}, LangBody>, res: Response<Res<Hero>>) => {
+  res.json(await getHeros(req.body.lang))
 })
 
 export default router
