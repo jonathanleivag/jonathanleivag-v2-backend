@@ -1,12 +1,29 @@
-import { WithId } from 'mongodb'
 import { getDB } from '../database'
 import { COLLECTION } from '../enum'
-import { AboutMes, Res } from '../type'
+import { AboutMes, Lang, Res } from '../type'
 
-export const getAboutMe = async (): Promise<Res<Array<WithId<AboutMes>>>> => {
+export const getAboutMe = async (lang: Lang): Promise<Res<AboutMes>> => {
   console.log('🚀 ~ getAboutMe ~ getAboutMe')
   try {
-    const aboutMe = await getDB().collection<AboutMes>(COLLECTION.ABOUTMES).find().toArray()
+    if (lang === null) {
+      return {
+        data: null,
+        error: 'No se especificó el idioma',
+        status: 400,
+        statusText: 'Bad Request'
+      }
+    }
+
+    if (lang !== 'es' && lang !== 'en') {
+      return {
+        data: null,
+        error: 'El idioma no es válido (es o en)',
+        status: 400,
+        statusText: 'Bad Request'
+      }
+    }
+
+    const aboutMe = await getDB().collection<AboutMes>(COLLECTION.ABOUTMES).findOne({ lan: lang })
 
     if (aboutMe === null) {
       return {
