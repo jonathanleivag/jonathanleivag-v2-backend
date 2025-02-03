@@ -17,7 +17,7 @@ export interface ResWhitOutData extends ResWhitOutDataOmit {
 
 export type Lang = 'es' | 'en'
 
-export interface LangBody {
+export interface LangQuery {
   lang: Lang
 }
 

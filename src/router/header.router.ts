@@ -1,11 +1,11 @@
 import { Router, Response, Request } from 'express'
 
 import { getHeader } from '../services/header.service'
-import { Header, LangBody, Res } from '../type'
+import { Header, LangQuery, Res } from '../type'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, {}, LangBody>, res: Response<Res<Header>>) => {
+router.get('/', async (req: Request<{}, {}, {}, LangQuery>, res: Response<Res<Header>>) => {
   res.json(await getHeader(req.query.lang))
 })
 
