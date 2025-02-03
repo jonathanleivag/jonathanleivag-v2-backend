@@ -1,6 +1,6 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { Lang, Navbar, Res } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { Lang, Navbar, Res } from '../type.js'
 
 export const getNavar = async (lang: Lang): Promise<Res<Navbar>> => {
   try {

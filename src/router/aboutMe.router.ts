@@ -1,6 +1,6 @@
 import { Router, Response, Request } from 'express'
-import { AboutMes, LangQuery, Res } from '../type'
-import { getAboutMe } from '../services/aboutMe.service'
+import { AboutMes, LangQuery, Res } from '../type.js'
+import { getAboutMe } from '../services/aboutMe.service.js'
 
 const router = Router()
 

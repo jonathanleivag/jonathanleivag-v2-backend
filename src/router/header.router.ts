@@ -1,7 +1,7 @@
 import { Router, Response, Request } from 'express'
 
-import { getHeader } from '../services/header.service'
-import { Header, LangQuery, Res } from '../type'
+import { getHeader } from '../services/header.service.js'
+import { Header, LangQuery, Res } from '../type.js'
 
 const router = Router()
 
