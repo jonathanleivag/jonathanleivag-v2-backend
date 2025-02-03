@@ -4,8 +4,8 @@ import { getAboutMe } from '../services/aboutMe.service'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, LangBody>, res: Response<Res<AboutMes>>) => {
-  res.json(await getAboutMe(req.body.lang))
+router.get('/', async (req: Request<{}, {}, {}, LangBody>, res: Response<Res<AboutMes>>) => {
+  res.json(await getAboutMe(req.query.lang))
 })
 
 export default router

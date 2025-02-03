@@ -4,8 +4,8 @@ import { Hero, LangBody, Res } from '../type'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, LangBody>, res: Response<Res<Hero>>) => {
-  res.json(await getHeros(req.body.lang))
+router.get('/', async (req: Request<{}, {}, {}, LangBody>, res: Response<Res<Hero>>) => {
+  res.json(await getHeros(req.query.lang))
 })
 
 export default router
