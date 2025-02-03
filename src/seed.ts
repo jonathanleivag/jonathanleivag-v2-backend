@@ -515,3 +515,25 @@ export const headersEn = {
   buttonText: 'Print My CV',
   imageUrl: 'https://res.cloudinary.com/dq8fpb695/image/upload/v1738527077/jonathanleivag/lsi75bjruuhxpbyr1s4i.jpg'
 }
+
+export const navbarEs = {
+  lan: 'es',
+  nav: ['Inicio',
+    'Sobre mí',
+    'Resumen',
+    'Portafolio',
+    'Blog',
+    'Contacto'],
+  image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
+}
+
+export const navbarEn = {
+  lan: 'en',
+  nav: ['Home',
+    'About Me',
+    'Summary',
+    'Portfolio',
+    'Blog',
+    'Contact'],
+  image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
+}

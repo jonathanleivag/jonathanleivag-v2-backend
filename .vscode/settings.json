@@ -11,7 +11,8 @@
     "Jonathanleivag",
     "Leiva",
     "mongodb",
-    "MONGODB"
+    "MONGODB",
+    "navabar"
   ],
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
