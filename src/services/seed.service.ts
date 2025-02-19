@@ -1,6 +1,6 @@
 import { getDB } from '../database'
 import { COLLECTION } from '../enum'
-import { aboutmesEn, aboutmesEs, headersEn, headersEs, herosEn, herosEs, navbarEn, navbarEs } from '../seed'
+import { aboutmesEn, aboutmesEs, headersEn, headersEs, herosEn, herosEs, navbarEn, navbarEs, socials } from '../seed'
 import { ResWhitOutData } from '../type'
 
 const deleteAll = async (): Promise<void> => {
@@ -27,6 +27,11 @@ const deleteAll = async (): Promise<void> => {
     if (navbar.length > 0) {
       await getDB().collection(COLLECTION.NAVBAR).deleteMany()
     }
+
+    const socials = await getDB().collection(COLLECTION.SOCIAL).find().toArray()
+    if (socials.length > 0) {
+      await getDB().collection(COLLECTION.SOCIAL).deleteMany()
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.error('🚫 Error deleting all data:', error.message)
@@ -41,6 +46,7 @@ const insertAll = async (): Promise<void> => {
     await getDB().collection(COLLECTION.ABOUTMES).insertMany([aboutmesEs, aboutmesEn])
     await getDB().collection(COLLECTION.HEADERS).insertMany([headersEs, headersEn])
     await getDB().collection(COLLECTION.NAVBAR).insertMany([navbarEs, navbarEn])
+    await getDB().collection(COLLECTION.SOCIAL).insertOne(socials)
   } catch (error) {
     if (error instanceof Error) {
       console.error('🚫 Error inserting all data:', error.message)
