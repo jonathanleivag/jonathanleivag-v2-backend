@@ -1,4 +1,5 @@
 import { ObjectId } from 'mongodb'
+import { socials } from './seed';
 /* -------------------------------------------------------------------------- */
 /*                                  Response                                  */
 /* -------------------------------------------------------------------------- */
@@ -195,4 +196,18 @@ export interface Navbar {
   lan: Lang
   nav: string[]
   image: string
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   social                                   */
+/* -------------------------------------------------------------------------- */
+export interface Social {
+  name: string
+  icon: string
+  url: string
+}
+
+export interface ResSocial {
+  _id: ObjectId
+  socials: Social[]
 }
