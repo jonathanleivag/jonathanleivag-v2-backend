@@ -1,6 +1,6 @@
 import { Router, Response, Request } from 'express'
-import { LangQuery, Navbar, Res } from '../type'
-import { getNavar } from '../services/navabar.service'
+import { LangQuery, Navbar, Res } from '../type.js'
+import { getNavar } from '../services/navabar.service.js'
 
 const router = Router()
 

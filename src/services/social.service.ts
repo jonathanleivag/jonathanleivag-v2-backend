@@ -1,6 +1,6 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { Res, ResSocial } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { Res, ResSocial } from '../type.js'
 
 export const getSocial = async (): Promise<Res<ResSocial>> => {
   console.log('🚀 ~ getSocial ~ getSocial')

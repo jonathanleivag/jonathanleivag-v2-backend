@@ -1,6 +1,6 @@
 import { MongoClient, Db, ServerApiVersion } from 'mongodb'
-import { getEnv } from './utils/env.util'
-import { ENV } from './enum'
+import { getEnv } from './utils/env.util.js'
+import { ENV } from './enum.js'
 
 const mongoURI = getEnv(ENV.MONGODB_URI)
 let client: MongoClient | null = null

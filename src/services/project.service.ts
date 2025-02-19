@@ -1,7 +1,7 @@
 import { Octokit, RestEndpointMethodTypes } from '@octokit/rest'
-import { ENV } from '../enum'
-import { IProject, PinnedRepo, Res } from '../type'
-import { getEnv } from '../utils/env.util'
+import { ENV } from '../enum.js'
+import { IProject, PinnedRepo, Res } from '../type.js'
+import { getEnv } from '../utils/env.util.js'
 
 export const getProjects = async (): Promise<Res<IProject>> => {
   console.log('🚀 ~ getProjects ~ getProjects')
