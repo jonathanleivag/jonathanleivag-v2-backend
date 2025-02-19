@@ -3,7 +3,8 @@ export enum COLLECTION {
   CONTACTS = 'contacts',
   HEROS = 'heros',
   HEADERS = 'headers',
-  NAVBAR = 'navbar'
+  NAVBAR = 'navbar',
+  SOCIAL = 'socials'
 }
 
 export enum ENV {
