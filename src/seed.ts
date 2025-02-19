@@ -1,13 +1,13 @@
 export const herosEn = {
   lan: 'en',
-  title: 'Fullstack Developer',
+  title: 'Who am i ?',
   description: "Hello! I'm Jonathan, a Fullstack Developer who works in the world of software. I'm here to help you create useful and efficient web and mobile applications for your business or your clients. Do you want to learn more about my work and how I can help you?",
   image: 'https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg'
 }
 
 export const herosEs = {
   lan: 'es',
-  title: 'Desarrollador Fullstack',
+  title: '¿Quién soy yo?',
   description: '¡Hola! Soy Jonathan, un desarrollador Fullstack que trabaja en el mundo del software. Estoy aquí para ayudarte a crear aplicaciones web y móviles que sean útiles y eficientes para tu negocio o tus clientes. ¿Quieres aprender más sobre mi trabajo y cómo puedo ayudarte?',
   image: 'https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg'
 }
@@ -536,4 +536,29 @@ export const navbarEn = {
     'Blog',
     'Contact'],
   image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
+}
+
+export const socials = {
+  socials: [
+    {
+      name: 'linkedin',
+      icon: 'linkedin',
+      url: 'https://www.linkedin.com/in/jonathanleivag/'
+    },
+    {
+      name: 'github',
+      icon: 'github',
+      url: 'https://github.com/JonathanLeivaGomez'
+    },
+    {
+      name: 'instagram',
+      icon: 'instagram',
+      url: 'https://www.instagram.com/jonathanleivag/'
+    },
+    {
+      name: 'mail',
+      icon: 'mail',
+      url: 'email@jonathanleivag.cl'
+    }
+  ]
 }
