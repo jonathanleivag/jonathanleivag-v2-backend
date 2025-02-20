@@ -101,6 +101,7 @@ export interface AboutMes {
   interests: Interests
   knowledge: TranslationKnowledge
   courses: Course[]
+  works: Iwork
   image: string
   createdAt: Date
   updatedAt: Date
@@ -158,6 +159,19 @@ export interface Skill {
   title: string
   content: string
   _id: string
+}
+
+export interface Iwork {
+  title?: string
+  works?: Work[]
+}
+
+export interface Work {
+  name?: string
+  jobTitle?: string
+  skills?: string[]
+  dateStart?: string
+  dateEnd?: null | string
 }
 
 /* -------------------------------------------------------------------------- */
