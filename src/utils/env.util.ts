@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import { ENV } from '../enum'
+import { ENV } from '../enum.js'
 
 export const getEnv = (key: ENV): string => {
   const value = process.env[key]

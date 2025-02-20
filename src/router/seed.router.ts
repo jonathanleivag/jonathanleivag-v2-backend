@@ -1,6 +1,6 @@
 import { Response, Router } from 'express'
-import { ResWhitOutData } from '../type'
-import { insert } from '../services/seed.service'
+import { ResWhitOutData } from '../type.js'
+import { insert } from '../services/seed.service.js'
 
 const router = Router()
 
