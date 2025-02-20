@@ -252,7 +252,33 @@ export const aboutmesEn = {
       name: 'Next.js: El framework de React para producción - Fernando Herrera A Full-Stack Developer & Teacher',
       content: 'Next.js gives you an excellent development experience with all the functions it needs for production: static and server hybrid, intelligent grouping, route preload.'
     }
-  ]
+  ],
+  works: {
+    title: 'Work Experience',
+    works: [
+      {
+        name: 'ValpoSystems',
+        jobTitle: 'Analista de programación',
+        skills: ['Angular', 'Node.js', 'Microsoft SQL Server', 'JavaScript', 'TypeScript'],
+        dateStart: '2024/06',
+        dateEnd: null
+      },
+      {
+        name: 'Gatblac',
+        jobTitle: 'Software Developer',
+        skills: ['SQL', 'JavaScript', 'AngularJS', 'SAP HANA', 'MongoDB'],
+        dateStart: '2022/05',
+        dateEnd: '2024/06'
+      },
+      {
+        name: 'Profesional independiente',
+        jobTitle: 'Full stack developer javascript Freelance',
+        skills: ['Nestjs', 'react js', 'React Native', 'React', 'Vue.js', 'Flutter', 'Express.js', 'Apollo GraphQL', 'Apollo server', 'PostgreSQL', 'MongoDB', 'Mongoose'],
+        dateStart: '2020/10',
+        dateEnd: '2022/05'
+      }
+    ]
+  }
 }
 
 export const aboutmesEs = {
@@ -495,7 +521,33 @@ export const aboutmesEs = {
       name: 'Next.js: El framework de React para producción - Fernando Herrera A Full-Stack Developer & Teacher',
       content: 'Next.js te brinda una excelente experiencia de desarrollo con todas las funciones que necesita para la producción: rendido híbrido estático y de servidor, agrupación inteligente, precarga de rutas'
     }
-  ]
+  ],
+  works: {
+    title: 'Experiencia laboral',
+    works: [
+      {
+        name: 'ValpoSystems',
+        jobTitle: 'Analista de programación',
+        skills: ['Angular', 'Node.js', 'Microsoft SQL Server', 'JavaScript', 'TypeScript'],
+        dateStart: '2024/06',
+        dateEnd: null
+      },
+      {
+        name: 'Gatblac',
+        jobTitle: 'Software Developer',
+        skills: ['SQL', 'JavaScript', 'AngularJS', 'SAP HANA', 'MongoDB'],
+        dateStart: '2022/05',
+        dateEnd: '2024/06'
+      },
+      {
+        name: 'Profesional independiente',
+        jobTitle: 'Full stack developer javascript Freelance',
+        skills: ['Nestjs', 'react js', 'React Native', 'React', 'Vue.js', 'Flutter', 'Express.js', 'Apollo GraphQL', 'Apollo server', 'PostgreSQL', 'MongoDB', 'Mongoose'],
+        dateStart: '2020/10',
+        dateEnd: '2022/05'
+      }
+    ]
+  }
 }
 
 export const headersEs = {
