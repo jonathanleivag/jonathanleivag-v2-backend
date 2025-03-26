@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express'
-import { getContact, sendEmail } from '../services/contact.service'
-import { Contact, EmailBody, Res, ResWhitOutData } from '../type'
+import { getContact, sendEmail } from '../services/contact.service.js'
+import { Contact, EmailBody, Res, ResWhitOutData } from '../type.js'
 import { WithId } from 'mongodb'
 
 const router = Router()
