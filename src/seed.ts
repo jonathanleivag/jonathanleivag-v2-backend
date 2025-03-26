@@ -570,23 +570,13 @@ export const headersEn = {
 
 export const navbarEs = {
   lan: 'es',
-  nav: ['Inicio',
-    'Sobre mí',
-    'Resumen',
-    'Portafolio',
-    'Blog',
-    'Contacto'],
+  nav: [{ nav: 'Inicio', router: 'home' }, { nav: 'Sobre mí', router: 'about' }, { nav: 'Resumen', router: 'summary' }, { nav: 'Portafolio', router: 'portfolio' }, { nav: 'Blog', router: 'blog' }, { nav: 'Contacto', router: 'contact' }],
   image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
 }
 
 export const navbarEn = {
   lan: 'en',
-  nav: ['Home',
-    'About Me',
-    'Summary',
-    'Portfolio',
-    'Blog',
-    'Contact'],
+  nav: [{ nav: 'Home', router: 'home' }, { nav: 'About Me', router: 'about' }, { nav: 'Summary', router: 'summary' }, { nav: 'Portfolio', router: 'portfolio' }, { nav: 'Blog', router: 'blog' }, { nav: 'Contact', router: 'contact' }],
   image: 'https://i.pravatar.cc/150?u=a042581f4e29026024d'
 }
 
