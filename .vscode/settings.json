@@ -1,20 +1,35 @@
 {
   "editor.formatOnSave": true,
   "cSpell.language": "en, es",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": [
     "aboutmes",
     "ABOUTMES",
+    "AUTOAPRENDIZAJE",
+    "AZÓCAR",
     "bookstoret",
+    "CIISA",
+    "expressjs",
+    "Frantend",
+    "Gatblac",
+    "Hana",
+    "HAYDÉE",
     "heros",
     "HEROS",
     "Iwork",
+    "JAHUEL",
     "jonathanleivag",
     "Jonathanleivag",
     "Leiva",
     "linkedin",
+    "MANSILLA",
+    "MERN",
     "mongodb",
     "MONGODB",
-    "navabar"
+    "navabar",
+    "precarga",
+    "Udemy",
+    "Valpo"
   ],
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
