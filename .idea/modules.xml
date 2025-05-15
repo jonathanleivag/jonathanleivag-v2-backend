@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../jonathanleivag-blog-backend/.idea/jonathanleivag-blog-backend.iml" filepath="$PROJECT_DIR$/../jonathanleivag-blog-backend/.idea/jonathanleivag-blog-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../jonathanleivag-blog-fronted/.idea/jonathanleivag-blog-fronted.iml" filepath="$PROJECT_DIR$/../jonathanleivag-blog-fronted/.idea/jonathanleivag-blog-fronted.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/jonathanleivag-v2-backend.iml" filepath="$PROJECT_DIR$/.idea/jonathanleivag-v2-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../jonathanleivag-v2-frontend/.idea/jonathanleivag-v2-frontend.iml" filepath="$PROJECT_DIR$/../jonathanleivag-v2-frontend/.idea/jonathanleivag-v2-frontend.iml" />
     </modules>
   </component>
 </project>
