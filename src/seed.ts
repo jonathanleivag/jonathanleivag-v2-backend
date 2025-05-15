@@ -601,6 +601,16 @@ export const socials = {
       name: 'mail',
       icon: 'mail',
       url: 'email@jonathanleivag.cl'
+    },
+    {
+      name: 'web',
+      icon: 'web',
+      url: 'https://jonathanleivag.cl'
+    },
+    {
+      name: 'blog',
+      icon: 'blog',
+      url: 'https://blog.jonathanleivag.cl'
     }
   ]
 }
