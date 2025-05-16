@@ -2,3 +2,4 @@ node_modules
 build
 .env
 .vercel
+/src/http/http-client.private.env.json

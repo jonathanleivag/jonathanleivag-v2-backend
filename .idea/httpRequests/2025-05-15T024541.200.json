@@ -1,0 +1,271 @@
+{
+  "docs": [
+    {
+      "_id": "68257b628ec474d10bd51f03",
+      "title": "sdssdsfgfdgssss",
+      "content": "<p>sfdgfsdgfsdgsdfg</p>",
+      "description": "sdfgfsdgsdg",
+      "image": "https://res.cloudinary.com/dq8fpb695/image/upload/v1747286761/blog%20Jonathanleivag/nfyhgzlrsvfr7ufbhp9h.png",
+      "published": true,
+      "slug": "sdssdsfgfdgssss",
+      "tags": [
+        "dff",
+        "dfd",
+        "sss"
+      ],
+      "views": 0,
+      "readingTime": 1,
+      "popular": false,
+      "user": {
+        "_id": "6822c943442b0a361f9fa9a4",
+        "name": "JONATHAN",
+        "email": "email@email.cl",
+        "password": "$2b$10$mnzoh.C.WzkVJxEXjv5.Ne60NZwurKE59U3JVSOB6lAJ7CXXm/cde",
+        "phone": "+56912345678",
+        "role": "ADMIN",
+        "description": "Bienvenido a mi web, mi nombre es Jonathan Leiva, soy egresado del instituto profesional ClISA, en donde cursé la carrera Programación Computacional y la Ingeniería Computacional e Informática. Aquí sabras más de mi y misconocimientos e intereses.",
+        "location": "Chile",
+        "start": "2024-03-20T00:00:00.000Z",
+        "webSite": "https://github.com/jonathanleivag",
+        "avatar": "https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg",
+        "isActive": true,
+        "deletedAt": null,
+        "createdAt": "2025-05-13T04:23:31.785Z",
+        "updatedAt": "2025-05-13T04:23:31.785Z"
+      },
+      "category": {
+        "_id": "68239fc9b82f3573df50266b",
+        "name": "Nueva categoria",
+        "description": "Nueva categoria",
+        "isActive": true,
+        "deletedAt": null,
+        "blogs": [
+          "6823a020b82f3573df5026ff",
+          "68257b2c8ec474d10bd51eea",
+          "68257b628ec474d10bd51f03"
+        ],
+        "createdAt": "2025-05-13T19:38:49.669Z",
+        "updatedAt": "2025-05-15T05:28:02.381Z"
+      },
+      "createdAt": "2025-05-15T05:28:02.261Z",
+      "updatedAt": "2025-05-15T05:28:02.261Z",
+      "id": "68257b628ec474d10bd51f03"
+    },
+    {
+      "_id": "68257b2c8ec474d10bd51eea",
+      "title": "sdssdsfgfdg",
+      "content": "<p>sfdgfsdgfsdgsdfg</p>",
+      "description": "sdfgfsdgsdg",
+      "image": "https://res.cloudinary.com/dq8fpb695/image/upload/v1747286761/blog%20Jonathanleivag/nfyhgzlrsvfr7ufbhp9h.png",
+      "published": true,
+      "slug": "sdssdsfgfdg",
+      "tags": [
+        "dff",
+        "dfd",
+        "sss"
+      ],
+      "views": 0,
+      "readingTime": 1,
+      "popular": false,
+      "user": {
+        "_id": "6822c943442b0a361f9fa9a4",
+        "name": "JONATHAN",
+        "email": "email@email.cl",
+        "password": "$2b$10$mnzoh.C.WzkVJxEXjv5.Ne60NZwurKE59U3JVSOB6lAJ7CXXm/cde",
+        "phone": "+56912345678",
+        "role": "ADMIN",
+        "description": "Bienvenido a mi web, mi nombre es Jonathan Leiva, soy egresado del instituto profesional ClISA, en donde cursé la carrera Programación Computacional y la Ingeniería Computacional e Informática. Aquí sabras más de mi y misconocimientos e intereses.",
+        "location": "Chile",
+        "start": "2024-03-20T00:00:00.000Z",
+        "webSite": "https://github.com/jonathanleivag",
+        "avatar": "https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg",
+        "isActive": true,
+        "deletedAt": null,
+        "createdAt": "2025-05-13T04:23:31.785Z",
+        "updatedAt": "2025-05-13T04:23:31.785Z"
+      },
+      "category": {
+        "_id": "68239fc9b82f3573df50266b",
+        "name": "Nueva categoria",
+        "description": "Nueva categoria",
+        "isActive": true,
+        "deletedAt": null,
+        "blogs": [
+          "6823a020b82f3573df5026ff",
+          "68257b2c8ec474d10bd51eea",
+          "68257b628ec474d10bd51f03"
+        ],
+        "createdAt": "2025-05-13T19:38:49.669Z",
+        "updatedAt": "2025-05-15T05:28:02.381Z"
+      },
+      "createdAt": "2025-05-15T05:27:08.890Z",
+      "updatedAt": "2025-05-15T05:27:08.890Z",
+      "id": "68257b2c8ec474d10bd51eea"
+    },
+    {
+      "_id": "6823a020b82f3573df5026ff",
+      "title": "Blog blog",
+      "content": "<p>Blog blog</p>",
+      "description": "Blog blog",
+      "image": "https://res.cloudinary.com/dq8fpb695/image/upload/v1747165210/blog%20Jonathanleivag/y6azxotyfdehwsnibnw2.png",
+      "published": true,
+      "slug": "blog_blog",
+      "tags": [
+        "Blog blog",
+        "Blog blog"
+      ],
+      "views": 0,
+      "readingTime": 1,
+      "popular": false,
+      "user": {
+        "_id": "6822c943442b0a361f9fa9a4",
+        "name": "JONATHAN",
+        "email": "email@email.cl",
+        "password": "$2b$10$mnzoh.C.WzkVJxEXjv5.Ne60NZwurKE59U3JVSOB6lAJ7CXXm/cde",
+        "phone": "+56912345678",
+        "role": "ADMIN",
+        "description": "Bienvenido a mi web, mi nombre es Jonathan Leiva, soy egresado del instituto profesional ClISA, en donde cursé la carrera Programación Computacional y la Ingeniería Computacional e Informática. Aquí sabras más de mi y misconocimientos e intereses.",
+        "location": "Chile",
+        "start": "2024-03-20T00:00:00.000Z",
+        "webSite": "https://github.com/jonathanleivag",
+        "avatar": "https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg",
+        "isActive": true,
+        "deletedAt": null,
+        "createdAt": "2025-05-13T04:23:31.785Z",
+        "updatedAt": "2025-05-13T04:23:31.785Z"
+      },
+      "category": {
+        "_id": "68239fc9b82f3573df50266b",
+        "name": "Nueva categoria",
+        "description": "Nueva categoria",
+        "isActive": true,
+        "deletedAt": null,
+        "blogs": [
+          "6823a020b82f3573df5026ff",
+          "68257b2c8ec474d10bd51eea",
+          "68257b628ec474d10bd51f03"
+        ],
+        "createdAt": "2025-05-13T19:38:49.669Z",
+        "updatedAt": "2025-05-15T05:28:02.381Z"
+      },
+      "createdAt": "2025-05-13T19:40:16.912Z",
+      "updatedAt": "2025-05-13T19:40:16.912Z",
+      "id": "6823a020b82f3573df5026ff"
+    },
+    {
+      "_id": "6823097f24cea7e2e2d25446",
+      "title": "gfdgdfgdg",
+      "content": "<p>dfgdfg</p>",
+      "description": "fgdgdg",
+      "image": "https://res.cloudinary.com/dq8fpb695/image/upload/v1747126647/blog%20Jonathanleivag/r7y4zj1qt6hl2qwrnsm5.png",
+      "published": true,
+      "slug": "gfdgdfgdg",
+      "tags": [
+        "fgdgdfg"
+      ],
+      "views": 0,
+      "readingTime": 1,
+      "popular": false,
+      "user": {
+        "_id": "6822c943442b0a361f9fa9a4",
+        "name": "JONATHAN",
+        "email": "email@email.cl",
+        "password": "$2b$10$mnzoh.C.WzkVJxEXjv5.Ne60NZwurKE59U3JVSOB6lAJ7CXXm/cde",
+        "phone": "+56912345678",
+        "role": "ADMIN",
+        "description": "Bienvenido a mi web, mi nombre es Jonathan Leiva, soy egresado del instituto profesional ClISA, en donde cursé la carrera Programación Computacional y la Ingeniería Computacional e Informática. Aquí sabras más de mi y misconocimientos e intereses.",
+        "location": "Chile",
+        "start": "2024-03-20T00:00:00.000Z",
+        "webSite": "https://github.com/jonathanleivag",
+        "avatar": "https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg",
+        "isActive": true,
+        "deletedAt": null,
+        "createdAt": "2025-05-13T04:23:31.785Z",
+        "updatedAt": "2025-05-13T04:23:31.785Z"
+      },
+      "category": {
+        "_id": "6822ca5b442b0a361f9fa9ce",
+        "name": "Desarrollo Web",
+        "description": "Descripción del desarrollo web",
+        "isActive": true,
+        "deletedAt": null,
+        "blogs": [
+          "6822ca8e442b0a361f9fa9e2",
+          "6822cabd442b0a361f9faa12",
+          "6822cadd442b0a361f9faa42",
+          "6823092724cea7e2e2d253b9",
+          "6823094224cea7e2e2d253e8",
+          "6823096424cea7e2e2d25417",
+          "6823097f24cea7e2e2d25446"
+        ],
+        "createdAt": "2025-05-13T04:28:11.398Z",
+        "updatedAt": "2025-05-13T08:57:35.509Z"
+      },
+      "createdAt": "2025-05-13T08:57:35.362Z",
+      "updatedAt": "2025-05-13T08:57:35.362Z",
+      "id": "6823097f24cea7e2e2d25446"
+    },
+    {
+      "_id": "6823096424cea7e2e2d25417",
+      "title": "fgdfgdfg",
+      "content": "<p>dfgdfgd</p>",
+      "description": "dfgdfg",
+      "image": "https://res.cloudinary.com/dq8fpb695/image/upload/v1747126619/blog%20Jonathanleivag/ufohtqk7rli4nzbuiq1v.png",
+      "published": true,
+      "slug": "fgdfgdfg",
+      "tags": [
+        "fgdfg"
+      ],
+      "views": 0,
+      "readingTime": 1,
+      "popular": false,
+      "user": {
+        "_id": "6822c943442b0a361f9fa9a4",
+        "name": "JONATHAN",
+        "email": "email@email.cl",
+        "password": "$2b$10$mnzoh.C.WzkVJxEXjv5.Ne60NZwurKE59U3JVSOB6lAJ7CXXm/cde",
+        "phone": "+56912345678",
+        "role": "ADMIN",
+        "description": "Bienvenido a mi web, mi nombre es Jonathan Leiva, soy egresado del instituto profesional ClISA, en donde cursé la carrera Programación Computacional y la Ingeniería Computacional e Informática. Aquí sabras más de mi y misconocimientos e intereses.",
+        "location": "Chile",
+        "start": "2024-03-20T00:00:00.000Z",
+        "webSite": "https://github.com/jonathanleivag",
+        "avatar": "https://res.cloudinary.com/dq8fpb695/image/upload/v1729452502/jonathanleivag/exuuqychlhf21s4unvj4.jpg",
+        "isActive": true,
+        "deletedAt": null,
+        "createdAt": "2025-05-13T04:23:31.785Z",
+        "updatedAt": "2025-05-13T04:23:31.785Z"
+      },
+      "category": {
+        "_id": "6822ca5b442b0a361f9fa9ce",
+        "name": "Desarrollo Web",
+        "description": "Descripción del desarrollo web",
+        "isActive": true,
+        "deletedAt": null,
+        "blogs": [
+          "6822ca8e442b0a361f9fa9e2",
+          "6822cabd442b0a361f9faa12",
+          "6822cadd442b0a361f9faa42",
+          "6823092724cea7e2e2d253b9",
+          "6823094224cea7e2e2d253e8",
+          "6823096424cea7e2e2d25417",
+          "6823097f24cea7e2e2d25446"
+        ],
+        "createdAt": "2025-05-13T04:28:11.398Z",
+        "updatedAt": "2025-05-13T08:57:35.509Z"
+      },
+      "createdAt": "2025-05-13T08:57:08.983Z",
+      "updatedAt": "2025-05-13T08:57:08.983Z",
+      "id": "6823096424cea7e2e2d25417"
+    }
+  ],
+  "totalDocs": 7,
+  "limit": 5,
+  "totalPages": 2,
+  "page": 1,
+  "pagingCounter": 1,
+  "hasPrevPage": false,
+  "hasNextPage": true,
+  "prevPage": null,
+  "nextPage": 2
+}

@@ -1,0 +1,9 @@
+GET http://localhost:3000/blog?page=1&limit=5&published=true&popular=false
+User-Agent: IntelliJ HTTP Client/WebStorm 2025.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-05-15T024541.200.json
+
+###
+
