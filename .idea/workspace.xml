@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$/../jonathanleivag-v2-frontend" value="feature/blogData" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;CLOSED&quot;
+    },
+    {
+      &quot;state&quot;: &quot;OPEN&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jonathanleivag/jonathanleivag-v2-backend.git&quot;,
+    &quot;accountId&quot;: &quot;7b12aacd-8633-4b4a-8c81-4f6e0ef2b392&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;jonathanleivag&quot;,
+    &quot;repository&quot;: &quot;jonathanleivag-v2-backend&quot;
+  }
+}</component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="file://$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" environment="dev" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2x3VD1RgYImclP7ZzUk1Mh1wUax" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.blog | #2.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;qa&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Blog.executor&quot;: &quot;Run&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start:dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier&quot;,
+    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.frontend">
+    <configuration name="blog | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" executionIdentifier="#2" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Blog" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/../jonathanleivag-blog-fronted/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="backend" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="blog backend" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/../jonathanleivag-blog-backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/../jonathanleivag-v2-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.blog | #2" />
+      <item itemvalue="npm.Blog" />
+      <item itemvalue="npm.backend" />
+      <item itemvalue="npm.blog backend" />
+      <item itemvalue="npm.frontend" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.frontend" />
+        <item itemvalue="npm.Blog" />
+        <item itemvalue="HTTP Request.blog | #2" />
+        <item itemvalue="npm.blog backend" />
+        <item itemvalue="npm.backend" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-WS-251.25410.117" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="" />
+      <created>1733542233688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733542233688</updated>
+      <workItem from="1733542234784" duration="156000" />
+      <workItem from="1747166625166" duration="1000" />
+      <workItem from="1747275912857" duration="227000" />
+      <workItem from="1747289799709" duration="9931000" />
+      <workItem from="1747328891751" duration="436000" />
+      <workItem from="1747338744153" duration="1200000" />
+      <workItem from="1747376768250" duration="89000" />
+      <workItem from="1747376860839" duration="85000" />
+    </task>
+    <task id="LOCAL-00001" summary="Add API integration for blog posts in the home page&#10;&#10;Replaced static blog data with dynamic fetching from the API. Introduced new enums, types, and environment variables to support the integration. Updated UI to display real data and added a new backend API route to handle blog fetching.">
+      <option name="closed" value="true" />
+      <created>1747293858688</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747293858688</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Filter out 'mail' icon from social links rendering  &#10;&#10;Updated the social links component to exclude entries with the 'mail' icon. This ensures only relevant external social links are displayed while preserving existing functionality and styling.">
+      <option name="closed" value="true" />
+      <created>1747295312759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747295312759</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add references to related modules and cleanup misc.xml&#10;&#10;Removed unused `.idea/misc.xml` and added module references for backend and frontend projects in `modules.xml`, `vcs.xml`, and `jonathanleivag-v2-backend.iml`. This ensures proper linkage and inclusion of related projects in the IDE.">
+      <option name="closed" value="true" />
+      <created>1747295332764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747295332764</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add new seed entries for web and blog links&#10;&#10;Introduced additional entries for 'web' and 'blog' with corresponding URLs in the seed file. This update ensures that these new links are accessible in the application.">
+      <option name="closed" value="true" />
+      <created>1747297650990</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747297650990</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add 'web' icon support and refine social filters&#10;&#10;Added a new 'web' icon to the asset sprite and updated the `IconName` type to include it. Adjusted social components to exclude both 'mail' and 'blog' icons from rendering and ensured consistent code formatting across files.">
+      <option name="closed" value="true" />
+      <created>1747299840717</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747299840717</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed.">
+      <option name="closed" value="true" />
+      <created>1747299876175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747299876175</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add API integration for blog posts in the home page&#10;&#10;Replaced static blog data with dynamic fetching from the API. Introduced new enums, types, and environment variables to support the integration. Updated UI to display real data and added a new backend API route to handle blog fetching." />
+    <MESSAGE value="Filter out 'mail' icon from social links rendering  &#10;&#10;Updated the social links component to exclude entries with the 'mail' icon. This ensures only relevant external social links are displayed while preserving existing functionality and styling." />
+    <MESSAGE value="Add references to related modules and cleanup misc.xml&#10;&#10;Removed unused `.idea/misc.xml` and added module references for backend and frontend projects in `modules.xml`, `vcs.xml`, and `jonathanleivag-v2-backend.iml`. This ensures proper linkage and inclusion of related projects in the IDE." />
+    <MESSAGE value="Add new web and blog links to the seed data&#10;&#10;Expanded the seed data with two new entries: a web link and a blog link. This update ensures the availability of these links in the application defaults." />
+    <MESSAGE value="Add new seed entries for web and blog links&#10;&#10;Introduced additional entries for 'web' and 'blog' with corresponding URLs in the seed file. This update ensures that these new links are accessible in the application." />
+    <MESSAGE value="Add 'web' icon support and refine social filters&#10;&#10;Added a new 'web' icon to the asset sprite and updated the `IconName` type to include it. Adjusted social components to exclude both 'mail' and 'blog' icons from rendering and ensured consistent code formatting across files." />
+    <MESSAGE value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+  </component>
+</project>
