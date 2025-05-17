@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Add .idea workspace.xml configuration to version control&#10;&#10;Introduced `.idea/workspace.xml` to the project, capturing IDE-specific settings like task management, recent Git branches, and run configurations. This file ensures consistent local development environments across team members.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Refactor and convert project to ES Modules&#10;&#10;Updated all imports and exports to use ES Module syntax by adding `.js` extensions. Transitioned TypeScript configuration to support native ES Modules, replaced `commonjs` with `NodeNext` module system, and added a `vercel.json` file for deployment configuration. These changes ensure the project aligns with modern JavaScript standards and improves compatibility for future development." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="qa" />
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$/../jonathanleivag-v2-frontend" value="feature/blogData" />
       </map>
     </option>
@@ -67,30 +65,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.blog | #2.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.Blog.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start:dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.blog | #2.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "vercel-2.0.0",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Blog.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.frontend.executor": "Run",
+    "npm.start:dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.frontend">
     <configuration name="blog | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
@@ -173,6 +176,7 @@
       <workItem from="1747376768250" duration="89000" />
       <workItem from="1747376860839" duration="85000" />
       <workItem from="1747456855340" duration="36000" />
+      <workItem from="1747460599922" duration="1413000" />
     </task>
     <task id="LOCAL-00001" summary="Add API integration for blog posts in the home page&#10;&#10;Replaced static blog data with dynamic fetching from the API. Introduced new enums, types, and environment variables to support the integration. Updated UI to display real data and added a new backend API route to handle blog fetching.">
       <option name="closed" value="true" />
@@ -230,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747377218853</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactor and convert project to ES Modules&#10;&#10;Updated all imports and exports to use ES Module syntax by adding `.js` extensions. Transitioned TypeScript configuration to support native ES Modules, replaced `commonjs` with `NodeNext` module system, and added a `vercel.json` file for deployment configuration. These changes ensure the project aligns with modern JavaScript standards and improves compatibility for future development.">
+      <option name="closed" value="true" />
+      <created>1747461899855</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747461899855</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +268,7 @@
     <MESSAGE value="Add 'web' icon support and refine social filters&#10;&#10;Added a new 'web' icon to the asset sprite and updated the `IconName` type to include it. Adjusted social components to exclude both 'mail' and 'blog' icons from rendering and ensured consistent code formatting across files." />
     <MESSAGE value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
     <MESSAGE value="Add .idea workspace.xml configuration to version control&#10;&#10;Introduced `.idea/workspace.xml` to the project, capturing IDE-specific settings like task management, recent Git branches, and run configurations. This file ensures consistent local development environments across team members." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add .idea workspace.xml configuration to version control&#10;&#10;Introduced `.idea/workspace.xml` to the project, capturing IDE-specific settings like task management, recent Git branches, and run configurations. This file ensures consistent local development environments across team members." />
+    <MESSAGE value="Refactor and convert project to ES Modules&#10;&#10;Updated all imports and exports to use ES Module syntax by adding `.js` extensions. Transitioned TypeScript configuration to support native ES Modules, replaced `commonjs` with `NodeNext` module system, and added a `vercel.json` file for deployment configuration. These changes ensure the project aligns with modern JavaScript standards and improves compatibility for future development." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor and convert project to ES Modules&#10;&#10;Updated all imports and exports to use ES Module syntax by adding `.js` extensions. Transitioned TypeScript configuration to support native ES Modules, replaced `commonjs` with `NodeNext` module system, and added a `vercel.json` file for deployment configuration. These changes ensure the project aligns with modern JavaScript standards and improves compatibility for future development." />
   </component>
 </project>
