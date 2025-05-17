@@ -1,6 +1,6 @@
-import { Hero, Lang, Res } from '../type'
-import { COLLECTION } from '../enum'
-import { getDB } from '../database'
+import { Hero, Lang, Res } from '../type.js'
+import { COLLECTION } from '../enum.js'
+import { getDB } from '../database.js'
 
 const getHeros = async (lang: Lang): Promise<Res<Hero>> => {
   try {
@@ -23,7 +23,9 @@ const getHeros = async (lang: Lang): Promise<Res<Hero>> => {
       }
     }
 
-    const heroDoc = await getDB().collection<Hero>(COLLECTION.HEROS).findOne({ lan: lang })
+    const heroDoc = await getDB()
+      .collection<Hero>(COLLECTION.HEROS)
+      .findOne({ lan: lang })
 
     if (heroDoc === null) {
       return {

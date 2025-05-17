@@ -1,7 +1,17 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { aboutmesEn, aboutmesEs, headersEn, headersEs, herosEn, herosEs, navbarEn, navbarEs, socials } from '../seed'
-import { ResWhitOutData } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import {
+  aboutmesEn,
+  aboutmesEs,
+  headersEn,
+  headersEs,
+  herosEn,
+  herosEs,
+  navbarEn,
+  navbarEs,
+  socials
+} from '../seed.js'
+import { ResWhitOutData } from '../type.js'
 
 const deleteAll = async (): Promise<void> => {
   try {
@@ -43,8 +53,12 @@ const insertAll = async (): Promise<void> => {
   try {
     console.log('🚀 ~ insertAll ~ insertAll')
     await getDB().collection(COLLECTION.HEROS).insertMany([herosEs, herosEn])
-    await getDB().collection(COLLECTION.ABOUTMES).insertMany([aboutmesEs, aboutmesEn])
-    await getDB().collection(COLLECTION.HEADERS).insertMany([headersEs, headersEn])
+    await getDB()
+      .collection(COLLECTION.ABOUTMES)
+      .insertMany([aboutmesEs, aboutmesEn])
+    await getDB()
+      .collection(COLLECTION.HEADERS)
+      .insertMany([headersEs, headersEn])
     await getDB().collection(COLLECTION.NAVBAR).insertMany([navbarEs, navbarEn])
     await getDB().collection(COLLECTION.SOCIAL).insertOne(socials)
   } catch (error) {
@@ -59,12 +73,27 @@ export const insert = async (): Promise<ResWhitOutData> => {
     console.log('🚀 ~ insert ~ insert')
     await deleteAll()
     await insertAll()
-    return { message: 'Data inserted successfully', status: 200, statusText: 'OK', error: null }
+    return {
+      message: 'Data inserted successfully',
+      status: 200,
+      statusText: 'OK',
+      error: null
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.error('🚫 Error inserting data:', error.message)
-      return { message: '🚫 Error inserting data', status: 500, statusText: 'Internal Server Error', error: error.message }
+      return {
+        message: '🚫 Error inserting data',
+        status: 500,
+        statusText: 'Internal Server Error',
+        error: error.message
+      }
     }
-    return { message: '🚫 Error inserting data', status: 500, statusText: 'Internal Server Error', error: 'Internal Server Error' }
+    return {
+      message: '🚫 Error inserting data',
+      status: 500,
+      statusText: 'Internal Server Error',
+      error: 'Internal Server Error'
+    }
   }
 }

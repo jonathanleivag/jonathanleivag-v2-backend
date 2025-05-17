@@ -1,6 +1,6 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { AboutMes, Lang, Res } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { AboutMes, Lang, Res } from '../type.js'
 
 export const getAboutMe = async (lang: Lang): Promise<Res<AboutMes>> => {
   console.log('🚀 ~ getAboutMe ~ getAboutMe')
@@ -23,7 +23,9 @@ export const getAboutMe = async (lang: Lang): Promise<Res<AboutMes>> => {
       }
     }
 
-    const aboutMe = await getDB().collection<AboutMes>(COLLECTION.ABOUTMES).findOne({ lan: lang })
+    const aboutMe = await getDB()
+      .collection<AboutMes>(COLLECTION.ABOUTMES)
+      .findOne({ lan: lang })
 
     if (aboutMe === null) {
       return {

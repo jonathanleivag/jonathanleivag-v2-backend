@@ -1,6 +1,6 @@
-import { getDB } from '../database'
-import { COLLECTION } from '../enum'
-import { Header, Lang, Res } from '../type'
+import { getDB } from '../database.js'
+import { COLLECTION } from '../enum.js'
+import { Header, Lang, Res } from '../type.js'
 
 export const getHeader = async (lang: Lang): Promise<Res<Header>> => {
   try {
@@ -23,7 +23,9 @@ export const getHeader = async (lang: Lang): Promise<Res<Header>> => {
       }
     }
 
-    const headerDoc = await getDB().collection(COLLECTION.HEADERS).findOne({ lan: lang })
+    const headerDoc = await getDB()
+      .collection(COLLECTION.HEADERS)
+      .findOne({ lan: lang })
     if (headerDoc !== null) {
       const header: Header = {
         _id: headerDoc._id,

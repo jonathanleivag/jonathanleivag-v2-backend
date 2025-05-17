@@ -1,12 +1,15 @@
-import { Router, Response, Request } from 'express'
+import { Request, Response, Router } from 'express'
 
-import { getHeader } from '../services/header.service'
-import { Header, LangQuery, Res } from '../type'
+import { getHeader } from '../services/header.service.js'
+import { Header, LangQuery, Res } from '../type.js'
 
 const router = Router()
 
-router.get('/', async (req: Request<{}, {}, {}, LangQuery>, res: Response<Res<Header>>) => {
-  res.json(await getHeader(req.query.lang))
-})
+router.get(
+  '/',
+  async (req: Request<{}, {}, {}, LangQuery>, res: Response<Res<Header>>) => {
+    res.json(await getHeader(req.query.lang))
+  }
+)
 
 export default router

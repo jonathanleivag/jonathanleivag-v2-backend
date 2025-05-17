@@ -1,6 +1,6 @@
-import { Router, Response } from 'express'
-import { Res, ResSocial } from '../type'
-import { getSocial } from '../services/social.service'
+import { Response, Router } from 'express'
+import { Res, ResSocial } from '../type.js'
+import { getSocial } from '../services/social.service.js'
 
 const router = Router()
 

@@ -1,6 +1,6 @@
-import { MongoClient, Db, ServerApiVersion } from 'mongodb'
-import { getEnv } from './utils/env.util'
-import { ENV } from './enum'
+import { Db, MongoClient, ServerApiVersion } from 'mongodb'
+import { getEnv } from './utils/env.util.js'
+import { ENV } from './enum.js'
 
 const mongoURI = getEnv(ENV.MONGODB_URI)
 let client: MongoClient | null = null
@@ -24,7 +24,9 @@ export const connectDB = async (): Promise<void> => {
       if (pingResult.ok !== 1) {
         throw new Error('🚫 Error pinging MongoDB')
       }
-      console.log('🌿 Pinged your deployment. You successfully connected to MongoDB!')
+      console.log(
+        '🌿 Pinged your deployment. You successfully connected to MongoDB!'
+      )
     } catch (error) {
       if (error instanceof Error) {
         console.error('🚫 Error connecting to MongoDB:', error.message)
