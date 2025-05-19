@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Refactor project configuration and add HTTP request updates&#10;&#10;Aligned project to ES Modules by updating imports/exports and TypeScript configuration to `NodeNext`. Added new HTTP request for social API and updated IntelliJ workspace settings for consistent execution identifiers. Improved deployment setup with a new `vercel.json` file.">
+      <change afterPath="$PROJECT_DIR$/fix-imports.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.prod.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$/../jonathanleivag-v2-frontend" value="feature/blogData" />
       </map>
     </option>
@@ -49,6 +55,7 @@
 }</component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/src/http/social.http" environment="dev" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -71,7 +78,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;qa&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;build&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -84,7 +91,7 @@
     &quot;npm.start:dev.executor&quot;: &quot;Run&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier&quot;,
     &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.vue&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -172,6 +179,8 @@
       <workItem from="1747338744153" duration="1200000" />
       <workItem from="1747376768250" duration="89000" />
       <workItem from="1747376860839" duration="85000" />
+      <workItem from="1747533841755" duration="366000" />
+      <workItem from="1747621423466" duration="942000" />
     </task>
     <task id="LOCAL-00001" summary="Add API integration for blog posts in the home page&#10;&#10;Replaced static blog data with dynamic fetching from the API. Introduced new enums, types, and environment variables to support the integration. Updated UI to display real data and added a new backend API route to handle blog fetching.">
       <option name="closed" value="true" />
