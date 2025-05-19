@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="&quot;Fix missing newline at end of workspace.xml file&#10;&#10;Added a newline at the end of the workspace.xml file to follow standard formatting practices. This change helps maintain consistency and prevents potential issues with file handling in certain systems.&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
         <entry key="$PROJECT_DIR$/../jonathanleivag-v2-frontend" value="feature/blogData" />
       </map>
     </option>
@@ -31,6 +33,17 @@
   ],
   &quot;lastFilter&quot;: {}
 }</component>
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
+    {
+      "id": {
+        "id": "PR_kwDONsR5Ss6Wy2Ck",
+        "number": 78
+      },
+      "lastSeen": 1747694467102
+    }
+  ]
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/jonathanleivag/jonathanleivag-v2-backend.git&quot;,
@@ -49,6 +62,7 @@
 }</component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/src/http/social.http" environment="dev" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -135,8 +149,8 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.blog | #2" />
-      <item itemvalue="npm.Blog" />
       <item itemvalue="npm.backend" />
+      <item itemvalue="npm.Blog" />
       <item itemvalue="npm.blog backend" />
       <item itemvalue="npm.frontend" />
     </list>
@@ -221,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747299876175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Fix missing newline at end of workspace.xml file&#10;&#10;Added a newline at the end of the workspace.xml file to follow standard formatting practices. This change helps maintain consistency and prevents potential issues with file handling in certain systems.&quot;">
+      <option name="closed" value="true" />
+      <created>1747694176080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747694176080</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
