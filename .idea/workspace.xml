@@ -65,30 +65,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.blog | #2.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;qa&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.Blog.executor&quot;: &quot;Run&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start:dev.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier&quot;,
-    &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.blog | #2.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Blog.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.frontend.executor": "Run",
+    "npm.start:dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/prettier",
+    "rest.client.default.execution.environment": "dev",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="npm.frontend">
     <configuration name="blog | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" executionIdentifier="#2" index="2" runType="Run single request">
       <method v="2" />
@@ -246,6 +246,8 @@
     <MESSAGE value="Add new seed entries for web and blog links&#10;&#10;Introduced additional entries for 'web' and 'blog' with corresponding URLs in the seed file. This update ensures that these new links are accessible in the application." />
     <MESSAGE value="Add 'web' icon support and refine social filters&#10;&#10;Added a new 'web' icon to the asset sprite and updated the `IconName` type to include it. Adjusted social components to exclude both 'mail' and 'blog' icons from rendering and ensured consistent code formatting across files." />
     <MESSAGE value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <MESSAGE value="Refactor project configuration and add HTTP request updates&#10;&#10;Aligned project to ES Modules by updating imports/exports and TypeScript configuration to `NodeNext`. Added new HTTP request for social API and updated IntelliJ workspace settings for consistent execution identifiers. Improved deployment setup with a new `vercel.json` file." />
+    <MESSAGE value="Refactor imports and align project with ES Module standards&#10;&#10;Introduced a script to fix TypeScript import paths by appending `.js` extensions, ensuring compatibility with ES Modules. Updated the project to use `NodeNext` module resolution with a new `tsconfig.prod.json`. Adjusted scripts, workspace settings, and metadata to reflect these changes, improving build reliability and deployment readiness." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor imports and align project with ES Module standards&#10;&#10;Introduced a script to fix TypeScript import paths by appending `.js` extensions, ensuring compatibility with ES Modules. Updated the project to use `NodeNext` module resolution with a new `tsconfig.prod.json`. Adjusted scripts, workspace settings, and metadata to reflect these changes, improving build reliability and deployment readiness." />
   </component>
 </project>
