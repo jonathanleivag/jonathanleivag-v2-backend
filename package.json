@@ -5,7 +5,7 @@
   "description": "The backend of JonathanLeivaG-V2 is a robust and secure solution designed to manage personal and professional information, as well as web and mobile development projects that are part of your digital portfolio.",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "start": "node build/index.js",
     "fix-imports": "node ./fix-imports.mjs",
     "build": "npm run fix-imports && tsc -p tsconfig.prod.json",
@@ -18,8 +18,8 @@
     "@types/cors": "2.8.17",
     "@types/express": "5.0.0",
     "prettier": "3.5.3",
-    "ts-node-dev": "2.0.0",
     "ts-standard": "12.0.2",
+    "tsx": "4.19.4",
     "typescript": "5.7.3"
   },
   "dependencies": {

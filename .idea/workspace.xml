@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="Refactor and convert project to ES Modules&#10;&#10;Updated all imports and exports to use ES Module syntax with `.js` extensions. Transitioned TypeScript configuration to support native ES Modules by adopting the `NodeNext` module system. Added a `vercel.json` file for deployment, ensuring alignment with modern JavaScript standards and improved codebase compatibility.">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="e89e1514-1ecd-42e5-963e-bc07e44e07b2" name="Changes" comment="&quot;Fix missing newline at end of workspace.xml file&#10;&#10;Added a newline at the end of the workspace.xml file to follow standard formatting practices. This change helps maintain consistency and prevents potential issues with file handling in certain systems.&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="qa" />
         <entry key="$PROJECT_DIR$/../jonathanleivag-v2-frontend" value="feature/blogData" />
       </map>
     </option>
@@ -32,6 +32,17 @@
     }
   ],
   &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
+    {
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONsR5Ss6Wy2Ck&quot;,
+        &quot;number&quot;: 78
+      },
+      &quot;lastSeen&quot;: 1747694467102
+    }
+  ]
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
@@ -52,6 +63,7 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" environment="dev" />
     <file url="file://$PROJECT_DIR$/src/http/social.http" environment="dev" />
+    <file url="file://$PROJECT_DIR$/src/http/seed.http" environment="dev" />
   </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -71,11 +83,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "HTTP Request.blog | #2.executor": "Run",
-    "HTTP Request.social | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "#83 on qa",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/jonathanleivagomez/development/jonathanleivag-v2/jonathanleivag-v2-backend",
     "node.js.detected.package.tslint": "true",
@@ -93,35 +104,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="HTTP Request.social | #1">
-    <configuration name="blog | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/../jonathanleivag-blog-backend/src/http/blog.http" executionIdentifier="#2" index="2" runType="Run single request">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="seed | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/http/seed.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="social | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/http/social.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="Blog" type="js.build_tools.npm" temporary="true">
-      <package-json value="$PROJECT_DIR$/../jonathanleivag-blog-fronted/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="blog backend" type="js.build_tools.npm" temporary="true">
-      <package-json value="$PROJECT_DIR$/../jonathanleivag-blog-backend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start:dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="frontend" type="js.build_tools.npm" temporary="true">
-      <package-json value="$PROJECT_DIR$/../jonathanleivag-v2-frontend/package.json" />
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -131,18 +119,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="HTTP Request.social | #1" />
-      <item itemvalue="HTTP Request.blog | #2" />
-      <item itemvalue="npm.Blog" />
-      <item itemvalue="npm.blog backend" />
-      <item itemvalue="npm.frontend" />
+      <item itemvalue="HTTP Request.seed | #1" />
+      <item itemvalue="npm.dev" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.social | #1" />
-        <item itemvalue="npm.frontend" />
-        <item itemvalue="npm.Blog" />
-        <item itemvalue="HTTP Request.blog | #2" />
+        <item itemvalue="HTTP Request.seed | #1" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747299876175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Fix missing newline at end of workspace.xml file&#10;&#10;Added a newline at the end of the workspace.xml file to follow standard formatting practices. This change helps maintain consistency and prevents potential issues with file handling in certain systems.&quot;">
+      <option name="closed" value="true" />
+      <created>1747694176080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747694176080</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Update workspace.xml with formatting and configuration changes&#10;&#10;Added a missing newline at the end of workspace.xml for formatting consistency. Updated Git recent branch to &quot;main&quot; and added new entries for HTTP client environments and pull request state. Adjusted task and run configurations to synchronize project settings.">
+      <option name="closed" value="true" />
+      <created>1747720427779</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747720427779</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +241,8 @@
     <MESSAGE value="Add new seed entries for web and blog links&#10;&#10;Introduced additional entries for 'web' and 'blog' with corresponding URLs in the seed file. This update ensures that these new links are accessible in the application." />
     <MESSAGE value="Add 'web' icon support and refine social filters&#10;&#10;Added a new 'web' icon to the asset sprite and updated the `IconName` type to include it. Adjusted social components to exclude both 'mail' and 'blog' icons from rendering and ensured consistent code formatting across files." />
     <MESSAGE value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add blog icon and exclude web icon from social links&#10;&#10;Added a new blog SVG icon to the public assets. Updated the social shared component to filter out icons with type &quot;web&quot; from being displayed." />
+    <MESSAGE value="Normalize .idea/workspace.xml formatting and resolve conflict&#10;&#10;Resolved merge conflict in workspace.xml by normalizing formatting and encoding. Ensured GitHubPullRequestState component changes were integrated correctly." />
+    <MESSAGE value="Update workspace.xml with formatting and configuration changes&#10;&#10;Added a missing newline at the end of workspace.xml for formatting consistency. Updated Git recent branch to &quot;main&quot; and added new entries for HTTP client environments and pull request state. Adjusted task and run configurations to synchronize project settings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml with formatting and configuration changes&#10;&#10;Added a missing newline at the end of workspace.xml for formatting consistency. Updated Git recent branch to &quot;main&quot; and added new entries for HTTP client environments and pull request state. Adjusted task and run configurations to synchronize project settings." />
   </component>
 </project>
