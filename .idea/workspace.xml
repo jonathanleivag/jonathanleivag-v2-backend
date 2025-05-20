@@ -33,17 +33,17 @@
   ],
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GitHubPullRequestState"><![CDATA[{
-  "prStates": [
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: [
     {
-      "id": {
-        "id": "PR_kwDONsR5Ss6Wy2Ck",
-        "number": 78
+      &quot;id&quot;: {
+        &quot;id&quot;: &quot;PR_kwDONsR5Ss6Wy2Ck&quot;,
+        &quot;number&quot;: 78
       },
-      "lastSeen": 1747694467102
+      &quot;lastSeen&quot;: 1747694467102
     }
   ]
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/jonathanleivag/jonathanleivag-v2-backend.git&quot;,
